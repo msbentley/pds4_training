@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://psa.esa.int/psa/v1/PDS4_PSA_1F00_1300.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://psa.esa.int/psa/bc/v1/PDS4_BC_1F00_1100.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Browse xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:psa="http://psa.esa.int/psa/v1" xmlns:bc="http://psa.esa.int/psa/bc/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="            http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.xsd            http://psa.esa.int/psa/v1 https://psa.esa.int/psa/v1/PDS4_PSA_1F00_1300.xsd            http://psa.esa.int/psa/bc/v1 https://psa.esa.int/psa/bc/v1/PDS4_BC_1F00_1100.xsd">
+	<Identification_Area>
+		<logical_identifier>urn:esa:psa:bc_mtm_mcam:browse:cam_raw_sc_cam3_browse_20241018t001002_61_f__t0004</logical_identifier>
+		<version_id>1.0</version_id>
+		<title>Monitoring Camera PDS raw science data browse product</title>
+		<information_model_version>1.15.0.0</information_model_version>
+		<product_class>Product_Browse</product_class>
+		<Modification_History>
+			<Modification_Detail>
+				<modification_date>2024-10-18</modification_date>
+				<version_id>1.0</version_id>
+				<description>This is version 1.0 of this product</description>
+			</Modification_Detail>
+		</Modification_History>
+	</Identification_Area>
+	<Reference_List>
+		<Internal_Reference>
+			<lid_reference>urn:esa:psa:bc_mtm_mcam:data_raw:cam_raw_sc_cam3_image_20241018t001002_61_f__t0004</lid_reference>
+			<reference_type>browse_to_data</reference_type>
+		</Internal_Reference>
+	</Reference_List>
+	<File_Area_Browse>
+		<File>
+			<file_name>cam_raw_sc_cam3_browse_20241018t001002_61_f__t0004.jpeg</file_name>
+			<creation_date_time>2024-10-18</creation_date_time>
+			<file_size unit="byte">157277</file_size>
+			<md5_checksum>ba257d233544944886c1ac6bb42cfc83</md5_checksum>
+		</File>
+		<Encoded_Image>
+			<offset unit="byte">0</offset>
+			<encoding_standard_id>JPEG</encoding_standard_id>
+		</Encoded_Image>
+	</File_Area_Browse>
+</Product_Browse>

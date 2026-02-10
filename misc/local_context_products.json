@@ -1,0 +1,70 @@
+{
+    "Product_Context": [
+        {
+            "type": [
+                "Spacecraft"
+            ],
+            "name": [
+                "Mercury Magnetospheric Orbiter"
+            ],
+            "lidvid": "urn:jaxa:darts:context:instrument_host:spacecraft.mmo::1.0"
+        },
+        {
+            "type": [
+                "Spectrometer",
+                "Imager"
+            ],
+            "name": [
+                "MSASI"
+            ],
+            "lidvid": "urn:jaxa:darts:context:instrument:mmo.msasi::1.0"
+        },
+        {
+            "type": [
+                "Particle analyzer",
+                "Charged Particle Detector"
+            ],
+            "name": [
+                "MPPE"
+            ],
+            "lidvid": "urn:jaxa:darts:context:instrument:mmo.mppe::1.0"
+        },
+        {
+            "type": [
+                "Electric Field Instrument",
+                "Magnetometer"
+            ],
+            "name": [
+                "PWI"
+            ],
+            "lidvid": "urn:jaxa:darts:context:instrument:mmo.pwi::1.0"
+        },
+        {
+            "type": [
+                "Magnetometer"
+            ],
+            "name": [
+                "MGF"
+            ],
+            "lidvid": "urn:jaxa:darts:context:instrument:mmo.mgf::1.0"
+        },
+        {
+            "type": [
+                "Dust Analyzer"
+            ],
+            "name": [
+                "MDM"
+            ],
+            "lidvid": "urn:jaxa:darts:context:instrument:mmo.mdm::1.0"
+        },
+        {
+            "type": [
+                "Charged Particle Detector"
+            ],
+            "name": [
+                "SPM"
+            ],
+            "lidvid": "urn:jaxa:darts:context:instrument:mmo.spm::1.0"
+        }
+    ]
+}

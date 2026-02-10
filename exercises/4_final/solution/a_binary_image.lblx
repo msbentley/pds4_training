@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1J00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://psa.esa.int/psa/emrsp/rm/rls/v1/PDS4_EMRSP_RM_RLS_1L00_1000.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+
+<Product_Observational xmlns="http://pds.nasa.gov/pds4/pds/v1"
+                       xmlns:emrsp_rm_rls="https://psa.esa.int/psa/emrsp/rm/rls/v1"
+                       xmlns:disp="http://pds.nasa.gov/pds4/disp/v1"
+                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                       xsi:schemaLocation="
+http://pds.nasa.gov/pds4/pds/v1        https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1J00.xsd
+https://psa.esa.int/psa/emrsp/rm/rls/v1 https://psa.esa.int/psa/emrsp/rm/rls/v1/PDS4_EMRSP_RM_RLS_1L00_1000.xsd">
+
+   <Identification_Area>
+      <logical_identifier>urn:esa:psa:a_mission:data_raw:instr_raw_sc_image</logical_identifier>
+      <version_id>1.0</version_id>
+      <title>An image</title>
+      <information_model_version>1.19.0.0</information_model_version>
+      <product_class>Product_Observational</product_class>
+   </Identification_Area>
+   <Observation_Area>
+      <Time_Coordinates>
+         <start_date_time>2024-08-20T21:58:35.202Z</start_date_time>
+         <stop_date_time>2024-08-20T22:58:35.202Z</stop_date_time>
+      </Time_Coordinates>
+      <Investigation_Area>
+         <name>Mars Express</name>
+         <type>Mission</type>
+         <Internal_Reference>
+            <lid_reference>urn:esa:psa:context:investigation:mission.mars_express</lid_reference>
+            <reference_type>data_to_investigation</reference_type>
+         </Internal_Reference>
+      </Investigation_Area>
+      <Observing_System>
+         <name>HRSC on Mars Express</name>
+         <Observing_System_Component>
+            <name>Mars Express</name>
+            <type>Host</type>
+            <description>Mars Express</description>
+            <Internal_Reference>
+               <lid_reference>urn:esa:psa:context:instrument_host:spacecraft.mex</lid_reference>
+               <reference_type>is_instrument_host</reference_type>
+            </Internal_Reference>
+         </Observing_System_Component>
+         <Observing_System_Component>
+            <name>High Resolution Stereo Camera</name>
+            <type>Instrument</type>
+            <description>High Resolution Stereo Camera</description>
+            <Internal_Reference>
+               <lid_reference>urn:esa:psa:context:instrument:mex.hrsc</lid_reference>
+               <reference_type>is_instrument</reference_type>
+            </Internal_Reference>
+         </Observing_System_Component>
+      </Observing_System>
+      <Target_Identification>
+         <name>NON SCIENCE</name>
+         <type>Calibrator</type>
+         <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:calibrator.non_science</lid_reference>
+            <reference_type>data_to_target</reference_type>
+         </Internal_Reference>
+      </Target_Identification>
+      <Mission_Area>
+         <emrsp_rm_rls:Autofocus_Data>
+             <emrsp_rm_rls:step_mode>1</emrsp_rm_rls:step_mode>
+             <emrsp_rm_rls:autofocus_range>1</emrsp_rm_rls:autofocus_range>
+             <emrsp_rm_rls:autofocus_position_tolerance>1</emrsp_rm_rls:autofocus_position_tolerance>
+             <emrsp_rm_rls:preamplifier_gain>1</emrsp_rm_rls:preamplifier_gain>
+             <emrsp_rm_rls:number_of_points_on_curve>5</emrsp_rm_rls:number_of_points_on_curve>
+             <emrsp_rm_rls:focus_position_calculated>5</emrsp_rm_rls:focus_position_calculated>
+             <emrsp_rm_rls:laser_channel>1</emrsp_rm_rls:laser_channel>
+             <emrsp_rm_rls:end_of_test_trigger>1</emrsp_rm_rls:end_of_test_trigger>
+             <emrsp_rm_rls:end_of_test_timestamp>1</emrsp_rm_rls:end_of_test_timestamp>
+             <emrsp_rm_rls:criticality>02</emrsp_rm_rls:criticality>
+         </emrsp_rm_rls:Autofocus_Data>
+         <emrsp_rm_rls:Instrument_Status>
+            <emrsp_rm_rls:number_of_samples>10</emrsp_rm_rls:number_of_samples>
+            <emrsp_rm_rls:sampling_frequency>1000</emrsp_rm_rls:sampling_frequency>
+            <emrsp_rm_rls:instrument_status_type>4</emrsp_rm_rls:instrument_status_type>
+            <emrsp_rm_rls:beginning_of_test_timestamp>12345</emrsp_rm_rls:beginning_of_test_timestamp>
+            <emrsp_rm_rls:rotation_angle unit="deg">30.5</emrsp_rm_rls:rotation_angle>
+            <emrsp_rm_rls:criticality>02</emrsp_rm_rls:criticality>
+         </emrsp_rm_rls:Instrument_Status>
+      </Mission_Area>
+      <Discipline_Area>
+      </Discipline_Area>
+   </Observation_Area>
+   <Reference_List>
+   </Reference_List>
+   <File_Area_Observational>
+      <File>
+         <file_name>a_binary_image.img</file_name>
+         <creation_date_time>2024-08-21T08:12:22.558Z</creation_date_time>
+      </File>
+      <Array_2D_Image>
+         <name>An image</name>
+         <local_identifier>AN_IMAGE</local_identifier>
+         <offset unit="byte">0</offset>
+         <axes>2</axes>
+         <axis_index_order>Last Index Fastest</axis_index_order>
+         <description>An image... but of what?</description>
+         <Element_Array>
+            <data_type>UnsignedLSB2</data_type>
+         </Element_Array>
+         <Axis_Array>
+            <axis_name>Sample</axis_name>
+            <elements>1024</elements>
+            <sequence_number>1</sequence_number>
+         </Axis_Array>
+         <Axis_Array>
+            <axis_name>Line</axis_name>
+            <elements>1024</elements>
+            <sequence_number>2</sequence_number>
+         </Axis_Array>
+      </Array_2D_Image>
+   </File_Area_Observational>
+</Product_Observational>

@@ -1,0 +1,718 @@
+{
+    "Product_Context": [
+        {
+            "type": [
+                "N/A"
+            ],
+            "name": [
+                "European Space Agency"
+            ],
+            "lidvid": "urn:esa:psa:context:agency:agency.esa::1.1"
+        },
+        {
+            "type": [
+                "Observatory"
+            ],
+            "name": [
+                "ESTRACK"
+            ],
+            "lidvid": "urn:esa:psa:context:facility:observatory.estrack::1.0"
+        },
+        {
+            "type": [
+                "Atmospheric Sciences"
+            ],
+            "name": [
+                "AMELIA"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:amelia.edm::1.3"
+        },
+        {
+            "type": [
+                "Atmospheric Sciences"
+            ],
+            "name": [
+                "COMARS"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:comars.edm::1.3"
+        },
+        {
+            "type": [
+                "Imager"
+            ],
+            "name": [
+                "DECA"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:deca.edm::1.3"
+        },
+        {
+            "type": [
+                "Weather Station"
+            ],
+            "name": [
+                "DREAMS"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:dreams.edm::1.2"
+        },
+        {
+            "type": [
+                "Radio Science"
+            ],
+            "name": [
+                "3GM"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:juice.3gm::1.0"
+        },
+        {
+            "type": [
+                "Altimeter"
+            ],
+            "name": [
+                "GALA"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:juice.gala::1.0"
+        },
+        {
+            "type": [
+                "Accelerometer"
+            ],
+            "name": [
+                "HAA"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:juice.haa::1.0"
+        },
+        {
+            "type": [
+                "Imager"
+            ],
+            "name": [
+                "JANUS"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:juice.janus::1.0"
+        },
+        {
+            "type": [
+                "Radio Science"
+            ],
+            "name": [
+                "JMAG"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:juice.jmag::1.0"
+        },
+        {
+            "type": [
+                "Radio Science"
+            ],
+            "name": [
+                "JMC"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:juice.jmc::1.0"
+        },
+        {
+            "type": [
+                "Imaging Spectrometer"
+            ],
+            "name": [
+                "MAJIS"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:juice.majis::1.0"
+        },
+        {
+            "type": [
+                "Imager"
+            ],
+            "name": [
+                "NAVCAM"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:juice.navcam::1.0"
+        },
+        {
+            "type": [
+                "Imager",
+                "Mass Spectrometer"
+            ],
+            "name": [
+                "PEP"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:juice.pep::1.0"
+        },
+        {
+            "type": [
+                "Radio Science"
+            ],
+            "name": [
+                "PRIDE"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:juice.pride::1.0"
+        },
+        {
+            "type": [
+                "Spectrometer"
+            ],
+            "name": [
+                "RADEM"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:juice.radem::1.0"
+        },
+        {
+            "type": [
+                "Radar"
+            ],
+            "name": [
+                "RIME"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:juice.rime::1.0"
+        },
+        {
+            "type": [
+                "Langmuir Probe",
+                "Magnetometer",
+                "Radio Science"
+            ],
+            "name": [
+                "RPWI"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:juice.rpwi::1.0"
+        },
+        {
+            "type": [
+                "Radiometer"
+            ],
+            "name": [
+                "SWI"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:juice.swi::1.0"
+        },
+        {
+            "type": [
+                "Spectrometer"
+            ],
+            "name": [
+                "UVS"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:juice.uvs::1.0"
+        },
+        {
+            "type": [
+                "Altimeter"
+            ],
+            "name": [
+                "BELA"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:bela.mpo::1.2"
+        },
+        {
+            "type": [
+                "Altimeter"
+            ],
+            "name": [
+                "BELA"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:mpo.bela::2.0"
+        },
+        {
+            "type": [
+                "Spectrometer"
+            ],
+            "name": [
+                "BERM"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:berm.mpo::1.2"
+        },
+        {
+            "type": [
+                "Spectrometer"
+            ],
+            "name": [
+                "BERM"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:mpo.berm::2.0"
+        },
+        {
+            "type": [
+                "Accelerometer"
+            ],
+            "name": [
+                "ISA"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:isa.mpo::1.2"
+        },
+        {
+            "type": [
+                "Accelerometer"
+            ],
+            "name": [
+                "ISA"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:mpo.isa::2.0"
+        },
+        {
+            "type": [
+                "Magnetometer"
+            ],
+            "name": [
+                "MPO-MAG"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:mag.mpo::1.2"
+        },
+        {
+            "type": [
+                "Magnetometer"
+            ],
+            "name": [
+                "MPO-MAG"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:mpo.mag::2.0"
+        },
+        {
+            "type": [
+                "Radiometer",
+                "Imaging Spectrometer"
+            ],
+            "name": [
+                "MERTIS"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:mertis.mpo::1.2"
+        },
+        {
+            "type": [
+                "Radiometer",
+                "Imaging Spectrometer"
+            ],
+            "name": [
+                "MERTIS"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:mpo.mertis::2.0"
+        },
+        {
+            "type": [
+                "Neutron Detector"
+            ],
+            "name": [
+                "MGNS"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:mgns.mpo::1.2"
+        },
+        {
+            "type": [
+                "Neutron Detector"
+            ],
+            "name": [
+                "MGNS"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:mpo.mgns::2.0"
+        },
+        {
+            "type": [
+                "Spectrometer",
+                "Imaging Spectrometer"
+            ],
+            "name": [
+                "MIXS"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:mixs.mpo::1.2"
+        },
+        {
+            "type": [
+                "Spectrometer",
+                "Imaging Spectrometer"
+            ],
+            "name": [
+                "MIXS"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:mpo.mixs::2.0"
+        },
+        {
+            "type": [
+                "Radio Science"
+            ],
+            "name": [
+                "MORE"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:more.mpo::1.2"
+        },
+        {
+            "type": [
+                "Radio Science"
+            ],
+            "name": [
+                "MORE"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:mpo.more::2.0"
+        },
+        {
+            "type": [
+                "Spectrometer"
+            ],
+            "name": [
+                "PHEBUS"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:phebus.mpo::1.2"
+        },
+        {
+            "type": [
+                "Spectrometer"
+            ],
+            "name": [
+                "PHEBUS"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:mpo.phebus::2.0"
+        },
+        {
+            "type": [
+                "Plasma Analyzer"
+            ],
+            "name": [
+                "SERENA"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:serena.mpo::1.2"
+        },
+        {
+            "type": [
+                "Charged Particle Detector",
+                "Mass Spectrometer",
+                "Neutral Particle Detector"
+            ],
+            "name": [
+                "SERENA"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:mpo.serena::2.0"
+        },
+        {
+            "type": [
+                "Imager",
+                "Imaging Spectrometer"
+            ],
+            "name": [
+                "SIMBIO-SYS"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:simbio-sys.mpo::1.3"
+        },
+        {
+            "type": [
+                "Imager",
+                "Imaging Spectrometer"
+            ],
+            "name": [
+                "SIMBIO-SYS"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:mpo.simbio-sys::2.0"
+        },
+        {
+            "type": [
+                "Spectrometer"
+            ],
+            "name": [
+                "SIXS"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:sixs.mpo::1.3"
+        },
+        {
+            "type": [
+                "Spectrometer"
+            ],
+            "name": [
+                "SIXS"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:mpo.sixs::2.0"
+        },
+        {
+            "type": [
+                "Imager"
+            ],
+            "name": [
+                "MCAM"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:mcam.mtm::1.2"
+        },
+        {
+            "type": [
+                "Imager"
+            ],
+            "name": [
+                "MCAM"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:mtm.mcam::2.0"
+        },
+        {
+            "type": [
+                "Spectrometer"
+            ],
+            "name": [
+                "ACS"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:acs.tgo::1.3"
+        },
+        {
+            "type": [
+                "Spectrometer"
+            ],
+            "name": [
+                "ACS"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:tgo.acs::2.0"
+        },
+        {
+            "type": [
+                "Imager"
+            ],
+            "name": [
+                "CASSIS"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:cassis.tgo::1.3"
+        },
+        {
+            "type": [
+                "Imager"
+            ],
+            "name": [
+                "CaSSIS"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:tgo.cassis::2.0"
+        },
+        {
+            "type": [
+                "Neutron Detector"
+            ],
+            "name": [
+                "FREND"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:frend.tgo::1.3"
+        },
+        {
+            "type": [
+                "Neutron Detector",
+                "Charged Particle Detector"
+            ],
+            "name": [
+                "FREND"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:tgo.frend::2.0"
+        },
+        {
+            "type": [
+                "Spectrometer"
+            ],
+            "name": [
+                "NOMAD"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:nomad.tgo::1.3"
+        },
+        {
+            "type": [
+                "Spectrometer"
+            ],
+            "name": [
+                "NOMAD"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument:tgo.nomad::2.0"
+        },
+        {
+            "type": [
+                "Spacecraft"
+            ],
+            "name": [
+                "TRACE GAS ORBITER"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument_host:spacecraft.edm::1.3"
+        },
+        {
+            "type": [
+                "Spacecraft"
+            ],
+            "name": [
+                "JUpiter ICy moons Explorer"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument_host:spacecraft.juice::1.0"
+        },
+        {
+            "type": [
+                "Spacecraft"
+            ],
+            "name": [
+                "Mercury Magnetospheric Orbiter"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument_host:spacecraft.mmo::1.3"
+        },
+        {
+            "type": [
+                "Spacecraft"
+            ],
+            "name": [
+                "Mercury Planetary Orbiter"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument_host:spacecraft.mpo::1.3"
+        },
+        {
+            "type": [
+                "Spacecraft"
+            ],
+            "name": [
+                "Mercury Transfer Module"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument_host:spacecraft.mtm::1.1"
+        },
+        {
+            "type": [
+                "Spacecraft"
+            ],
+            "name": [
+                "TRACE GAS ORBITER"
+            ],
+            "lidvid": "urn:esa:psa:context:instrument_host:spacecraft.tgo::1.4"
+        },
+        {
+            "type": [
+                "Mission"
+            ],
+            "name": [
+                "BepiColombo"
+            ],
+            "lidvid": "urn:esa:psa:context:investigation:mission.bc::1.2"
+        },
+        {
+            "type": [
+                "Mission"
+            ],
+            "name": [
+                "ExoMars 2016"
+            ],
+            "lidvid": "urn:esa:psa:context:investigation:mission.em16::1.5"
+        },
+        {
+            "type": [
+                "Mission"
+            ],
+            "name": [
+                "JUICE"
+            ],
+            "lidvid": "urn:esa:psa:context:investigation:mission.juice::1.0"
+        },
+        {
+            "type": [
+                "Star"
+            ],
+            "name": [
+                "HD 100889"
+            ],
+            "lidvid": "urn:esa:psa:context:target:star.hd_100889::1.3"
+        },
+        {
+            "type": [
+                "Star"
+            ],
+            "name": [
+                "HD 15318"
+            ],
+            "lidvid": "urn:esa:psa:context:target:star.hd_15318::1.3"
+        },
+        {
+            "type": [
+                "Star"
+            ],
+            "name": [
+                "HD 172167"
+            ],
+            "lidvid": "urn:esa:psa:context:target:star.hd_172167::1.2"
+        },
+        {
+            "type": [
+                "Star"
+            ],
+            "name": [
+                "HD 30739"
+            ],
+            "lidvid": "urn:esa:psa:context:target:star.hd_30739::1.3"
+        },
+        {
+            "type": [
+                "Star"
+            ],
+            "name": [
+                "HD 42560"
+            ],
+            "lidvid": "urn:esa:psa:context:target:star.hd_42560::1.3"
+        },
+        {
+            "type": [
+                "Star"
+            ],
+            "name": [
+                "HD 48915"
+            ],
+            "lidvid": "urn:esa:psa:context:target:star.hd_48915::1.2"
+        },
+        {
+            "type": [
+                "Star"
+            ],
+            "name": [
+                "HD 93521"
+            ],
+            "lidvid": "urn:esa:psa:context:target:star.hd_93521::1.0"
+        },
+        {
+            "type": [
+                "Star"
+            ],
+            "name": [
+                "HR 1996"
+            ],
+            "lidvid": "urn:esa:psa:context:target:star.hr_1996::1.0"
+        },
+        {
+            "type": [
+                "Star"
+            ],
+            "name": [
+                "Landolt SA 104"
+            ],
+            "lidvid": "urn:esa:psa:context:target:star.landolt_sa_104::1.2"
+        },
+        {
+            "type": [
+                "Star"
+            ],
+            "name": [
+                "Landolt SA 92"
+            ],
+            "lidvid": "urn:esa:psa:context:target:star.landolt_sa_92::1.2"
+        },
+        {
+            "type": [
+                "Star Cluster"
+            ],
+            "name": [
+                "PLEIADES"
+            ],
+            "lidvid": "urn:esa:psa:context:target:open_cluster.pleiades::1.2"
+        },
+        {
+            "type": [
+                "Star"
+            ],
+            "name": [
+                "Zeta Cassiopeiae"
+            ],
+            "lidvid": "urn:esa:psa:context:target:star.zet_cas::1.0"
+        },
+        {
+            "type": [
+                "N/A"
+            ],
+            "name": [
+                "N/A"
+            ],
+            "lidvid": "urn:esa:psa:context:telescope:malarguee.dsa3_35m::1.0"
+        },
+        {
+            "type": [
+                "N/A"
+            ],
+            "name": [
+                "N/A"
+            ],
+            "lidvid": "urn:esa:psa:context:telescope:new_norcia.dsa1_35m::1.0"
+        }
+    ]
+}

@@ -1,0 +1,231 @@
+<?xml version="1.0" ?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/geom/v1/PDS4_GEOM_1F00_1910.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/disp/v1/PDS4_DISP_1F00_1500.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/img/v1/PDS4_IMG_1F00_1810.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://psa.esa.int/psa/v1/PDS4_PSA_1F00_1300.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://psa.esa.int/psa/bc/v1/PDS4_BC_1F00_1100.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:disp="http://pds.nasa.gov/pds4/disp/v1" xmlns:geom="http://pds.nasa.gov/pds4/geom/v1" xmlns:img="http://pds.nasa.gov/pds4/img/v1" xmlns:psa="http://psa.esa.int/psa/v1" xmlns:bc="http://psa.esa.int/psa/bc/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="            http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.xsd            http://pds.nasa.gov/pds4/geom/v1 https://pds.nasa.gov/pds4/geom/v1/PDS4_GEOM_1F00_1910.xsd            http://pds.nasa.gov/pds4/disp/v1 https://pds.nasa.gov/pds4/disp/v1/PDS4_DISP_1F00_1500.xsd            http://pds.nasa.gov/pds4/img/v1 https://pds.nasa.gov/pds4/img/v1/PDS4_IMG_1F00_1810.xsd            http://psa.esa.int/psa/v1 https://psa.esa.int/psa/v1/PDS4_PSA_1F00_1300.xsd            http://psa.esa.int/psa/bc/v1 https://psa.esa.int/psa/bc/v1/PDS4_BC_1F00_1100.xsd">
+	<Identification_Area>
+		<logical_identifier>urn:esa:psa:bc_mtm_mcam:data_raw:cam_raw_sc_cam3_image_20241018t001002_61_f__t0004</logical_identifier>
+		<version_id>1.0</version_id>
+		<title>BepiColombo MCAM image product</title>
+		<information_model_version>1.15.0.0</information_model_version>
+		<product_class>Product_Observational</product_class>
+		<Modification_History>
+			<Modification_Detail>
+				<modification_date>2024-10-18</modification_date>
+				<version_id>1.0</version_id>
+				<description>This is version 1.0  of this product</description>
+			</Modification_Detail>
+		</Modification_History>
+	</Identification_Area>
+	<Observation_Area>
+		<Time_Coordinates>
+			<start_date_time>2024-10-18T00:10:02.750Z</start_date_time>
+			<stop_date_time>2024-10-18T00:10:02.754Z</stop_date_time>
+		</Time_Coordinates>
+		<Primary_Result_Summary>
+			<purpose>Engineering</purpose>
+			<processing_level>Raw</processing_level>
+			<description>
+          This file contains a raw image from the MCAM monitoring instrument.
+      </description>
+			<Science_Facets>
+				<wavelength_range>Visible</wavelength_range>
+				<discipline_name>Imaging</discipline_name>
+			</Science_Facets>
+		</Primary_Result_Summary>
+		<Investigation_Area>
+			<name>BepiColombo</name>
+			<type>Mission</type>
+			<Internal_Reference>
+				<lid_reference>urn:esa:psa:context:investigation:mission.bc</lid_reference>
+				<reference_type>data_to_investigation</reference_type>
+			</Internal_Reference>
+		</Investigation_Area>
+		<Observing_System>
+			<name>BepiColombo Monitoring Camera</name>
+			<Observing_System_Component>
+				<name>Mercury Transfer Module</name>
+				<type>Host</type>
+				<Internal_Reference>
+					<lid_reference>urn:esa:psa:context:instrument_host:spacecraft.mtm</lid_reference>
+					<reference_type>is_instrument_host</reference_type>
+				</Internal_Reference>
+			</Observing_System_Component>
+			<Observing_System_Component>
+				<name>MCAM</name>
+				<type>Instrument</type>
+				<description>Mercury Monitoring Camera</description>
+				<Internal_Reference>
+					<lid_reference>urn:esa:psa:context:instrument:mtm.mcam</lid_reference>
+					<reference_type>is_instrument</reference_type>
+				</Internal_Reference>
+			</Observing_System_Component>
+		</Observing_System>
+		<Target_Identification>
+			<name>SPACECRAFT_DECK</name>
+			<type>Calibrator</type>
+			<Internal_Reference>
+				<lid_reference>urn:nasa:pds:context:target:calibrator.spacecraft_deck</lid_reference>
+				<reference_type>data_to_target</reference_type>
+			</Internal_Reference>
+		</Target_Identification>
+		<Mission_Area>
+			<psa:Mission_Information>
+				<psa:spacecraft_clock_start_count>1/0793930200:26725</psa:spacecraft_clock_start_count>
+				<psa:spacecraft_clock_stop_count>1/0793930200:26988</psa:spacecraft_clock_stop_count>
+				<psa:mission_phase_name>Cruise</psa:mission_phase_name>
+				<psa:mission_phase_identifier>cruise</psa:mission_phase_identifier>
+			</psa:Mission_Information>
+			<psa:Sub-Instrument>
+				<psa:identifier>CAM3</psa:identifier>
+				<psa:name>Monitoring Camera 3</psa:name>
+				<psa:type>Imager</psa:type>
+			</psa:Sub-Instrument>
+			<psa:Processing_Context>
+				<psa:processing_software_title>mcam_tm2raw</psa:processing_software_title>
+				<psa:processing_software_version>1.6.0</psa:processing_software_version>
+				<psa:Processing_Inputs>
+					<psa:Processing_Input_Identification>
+						<psa:type>telemetry</psa:type>
+						<psa:file_name>bccam_tm_all_20241018T000000_20241019T000000.dat</psa:file_name>
+					</psa:Processing_Input_Identification>
+					<psa:Processing_Input_Identification>
+						<psa:type>SPICE kernel</psa:type>
+						<psa:file_name>bc_ops_v430_20241016_002.tm</psa:file_name>
+					</psa:Processing_Input_Identification>
+				</psa:Processing_Inputs>
+			</psa:Processing_Context>
+			<psa:Quality_Information>
+				<psa:quality_flag>1</psa:quality_flag>
+			</psa:Quality_Information>
+		</Mission_Area>
+		<Discipline_Area>
+			<disp:Display_Settings>
+				<Local_Internal_Reference>
+					<local_identifier_reference>MCAM_image</local_identifier_reference>
+					<local_reference_type>display_settings_to_array</local_reference_type>
+				</Local_Internal_Reference>
+				<disp:Display_Direction>
+					<disp:horizontal_display_axis>Sample</disp:horizontal_display_axis>
+					<disp:horizontal_display_direction>Left to Right</disp:horizontal_display_direction>
+					<disp:vertical_display_axis>Line</disp:vertical_display_axis>
+					<disp:vertical_display_direction>Bottom to Top</disp:vertical_display_direction>
+				</disp:Display_Direction>
+			</disp:Display_Settings>
+			<img:Imaging>
+				<Local_Internal_Reference>
+					<local_identifier_reference>MCAM_image</local_identifier_reference>
+					<local_reference_type>imaging_parameters_to_image_object</local_reference_type>
+				</Local_Internal_Reference>
+				<img:Detector>
+					<img:gain_number>2.01</img:gain_number>
+					<img:analog_offset>0</img:analog_offset>
+				</img:Detector>
+				<img:Exposure>
+					<img:exposure_duration unit="ms">4</img:exposure_duration>
+				</img:Exposure>
+			</img:Imaging>
+			<geom:Geometry>
+				<geom:SPICE_Kernel_Files>
+					<geom:SPICE_Kernel_Identification>
+						<geom:kernel_type>MK</geom:kernel_type>
+						<geom:spice_kernel_file_name>bc_ops_v430_20241016_002.tm</geom:spice_kernel_file_name>
+					</geom:SPICE_Kernel_Identification>
+				</geom:SPICE_Kernel_Files>
+				<geom:Geometry_Orbiter>
+					<geom:geometry_reference_time_utc>2024-10-18T00:10:02.750Z</geom:geometry_reference_time_utc>
+					<geom:Orbiter_Identification>
+						<geom:Coordinate_System_Identification>
+							<geom:coordinate_system_type>Cartesian</geom:coordinate_system_type>
+							<geom:Coordinate_System_Origin_Identification>
+								<Internal_Reference>
+									<lid_reference>urn:nasa:pds:context:target:star.sun</lid_reference>
+									<reference_type>geometry_to_body</reference_type>
+								</Internal_Reference>
+							</geom:Coordinate_System_Origin_Identification>
+							<geom:Reference_Frame_Identification>
+								<geom:frame_spice_name>J2000</geom:frame_spice_name>
+							</geom:Reference_Frame_Identification>
+						</geom:Coordinate_System_Identification>
+					</geom:Orbiter_Identification>
+					<geom:Distances>
+						<geom:Distances_Specific>
+							<geom:spacecraft_heliocentric_distance unit="km">69325702.90179566</geom:spacecraft_heliocentric_distance>
+						</geom:Distances_Specific>
+					</geom:Distances>
+					<geom:Vectors>
+						<geom:Vectors_Cartesian_Specific>
+							<geom:Vector_Cartesian_Position_Sun_To_Spacecraft>
+								<geom:x_position unit="km">-31303339.77721373</geom:x_position>
+								<geom:y_position unit="km">-56223705.45621691</geom:y_position>
+								<geom:z_position unit="km">-25788542.928845584</geom:z_position>
+								<geom:light_time_correction_applied>None</geom:light_time_correction_applied>
+							</geom:Vector_Cartesian_Position_Sun_To_Spacecraft>
+						</geom:Vectors_Cartesian_Specific>
+					</geom:Vectors>
+				</geom:Geometry_Orbiter>
+			</geom:Geometry>
+		</Discipline_Area>
+	</Observation_Area>
+	<Reference_List>
+		<Internal_Reference>
+			<lid_reference>urn:esa:psa:bc_mtm_mcam:browse:cam_raw_sc_cam3_browse_20241018t001002_61_f__t0004</lid_reference>
+			<reference_type>data_to_browse</reference_type>
+		</Internal_Reference>
+	</Reference_List>
+	<File_Area_Observational>
+		<File>
+			<file_name>cam_raw_sc_cam3_image_20241018t001002_61_f__t0004.fits</file_name>
+			<file_size unit="byte">2108160</file_size>
+			<md5_checksum>bea3bbd6db1612ede7f7dd326d2a642c</md5_checksum>
+		</File>
+		<Header>
+			<name>FITS primary header</name>
+			<offset unit="byte">0</offset>
+			<object_length unit="byte">2880</object_length>
+			<parsing_standard_id>FITS 3.0</parsing_standard_id>
+			<description>
+			FITS primary header
+	  </description>
+		</Header>
+		<Header>
+			<name>FITS extension header</name>
+			<offset unit="byte">2880</offset>
+			<object_length unit="byte">5760</object_length>
+			<parsing_standard_id>FITS 3.0</parsing_standard_id>
+			<description>
+		FITS extension header
+	  </description>
+		</Header>
+		<Array_2D_Image>
+			<name>MCAM image</name>
+			<local_identifier>MCAM_image</local_identifier>
+			<offset unit="byte">8640</offset>
+			<axes>2</axes>
+			<axis_index_order>Last Index Fastest</axis_index_order>
+			<Element_Array>
+				<data_type>SignedMSB2</data_type>
+			</Element_Array>
+			<Axis_Array>
+				<axis_name>Line</axis_name>
+				<local_identifier>line</local_identifier>
+				<elements>1024</elements>
+				<sequence_number>1</sequence_number>
+			</Axis_Array>
+			<Axis_Array>
+				<axis_name>Sample</axis_name>
+				<local_identifier>sample</local_identifier>
+				<elements>1024</elements>
+				<sequence_number>2</sequence_number>
+			</Axis_Array>
+			<Special_Constants>
+				<missing_constant>-1</missing_constant>
+				<valid_maximum>1023</valid_maximum>
+				<valid_minimum>0</valid_minimum>
+			</Special_Constants>
+		</Array_2D_Image>
+	</File_Area_Observational>
+</Product_Observational>

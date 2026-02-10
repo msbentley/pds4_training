@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+
+    <rewriteURI uriStartString="https://pds.nasa.gov/pds4/pds/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/psa.pds4/pds/xml_schema"/>
+    <rewriteURI uriStartString="https://pds.nasa.gov/pds4/geom/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/psa.pds4/pds/xml_schema/geom"/>
+    <rewriteURI uriStartString="https://pds.nasa.gov/pds4/disp/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/psa.pds4/pds/xml_schema/disp"/>
+    <rewriteURI uriStartString="https://pds.nasa.gov/pds4/cart/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/psa.pds4/pds/xml_schema/cart"/>
+    <rewriteURI uriStartString="https://pds.nasa.gov/pds4/img/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/psa.pds4/pds/xml_schema/img"/>
+    <rewriteURI uriStartString="https://pds.nasa.gov/pds4/sp/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/psa.pds4/pds/xml_schema/sp"/>
+    <rewriteURI uriStartString="https://pds.nasa.gov/pds4/ctli/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/psa.pds4/pds/xml_schema/ctli"/>
+    <rewriteURI uriStartString="https://pds.nasa.gov/pds4/multi/v2" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/psa.pds4/pds/xml_schema/multi"/>
+    <rewriteURI uriStartString="https://pds.nasa.gov/pds4/msn/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/psa.pds4/pds/xml_schema/msn"/>
+    <rewriteURI uriStartString="https://pds.nasa.gov/pds4/particle/v2" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/psa.pds4/pds/xml_schema/particle"/>
+    
+    <rewriteURI uriStartString="https://psa.esa.int/psa/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/psa.pds4/psa/psa_bundle/xml_schema/"/>
+
+    <rewriteURI uriStartString="https://psa.esa.int/psa/bc/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/bepi.pds4/bc_bundle/xml_schema"/>
+    <rewriteURI uriStartString="https://psa.esa.int/psa/bc/mpo/bel/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/bepi.pds4/bc_bundle/xml_schema"/>
+    <rewriteURI uriStartString="https://psa.esa.int/psa/bc/mpo/mag/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/bepi.pds4/bc_bundle/xml_schema"/>
+    <rewriteURI uriStartString="https://psa.esa.int/psa/bc/mpo/isa/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/bepi.pds4/bc_bundle/xml_schema"/>
+    <rewriteURI uriStartString="https://psa.esa.int/psa/bc/mpo/mre/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/bepi.pds4/bc_bundle/xml_schema"/>
+    <rewriteURI uriStartString="https://psa.esa.int/psa/bc/mpo/six/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/bepi.pds4/bc_bundle/xml_schema"/>
+    <rewriteURI uriStartString="https://psa.esa.int/psa/bc/mpo/srn/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/bepi.pds4/bc_bundle/xml_schema"/>
+    <rewriteURI uriStartString="https://psa.esa.int/psa/bc/mpo/phe/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/bepi.pds4/bc_bundle/xml_schema"/>
+
+    <rewriteURI uriStartString="https://psa.esa.int/psa/em16/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/em16"/>
+    <rewriteURI uriStartString="https://psa.esa.int/psa/mission/em16/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/em16"/>
+    <rewriteURI uriStartString="https://psa.esa.int/psa/em16/tgo/cas/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/em16"/>
+    <rewriteURI uriStartString="https://psa.esa.int/psa/em16/tgo/acs/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/em16"/>
+    <rewriteURI uriStartString="https://psa.esa.int/psa/em16/tgo/frd/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/em16"/>
+
+    <rewriteURI uriStartString="https://psa.esa.int/psa/emrsp/rm/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/em16"/>
+    <rewriteURI uriStartString="https://psa.esa.int/psa/emrsp/rm/nav/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/em16"/>
+
+    <rewriteURI uriStartString="http://psa.esa.int/psa/juice/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/juice/juice-pds4-templates/juice/xml_schema"/>
+    <rewriteURI uriStartString="https://psa.esa.int/psa/juice/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/juice/juice-pds4-templates/juice/xml_schema"/>
+    <rewriteURI uriStartString="https://psa.esa.int/psa/juice/juice_janus/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/juice/juice-pds4-templates/juice/xml_schema"/>
+    <rewriteURI uriStartString="https://psa.esa.int/psa/juice/juice_majis/v1" rewritePrefix="file:///Users/mbentley/OneDrive/work/bepi/repos/juice/juice-pds4-templates/juice/xml_schema"/>
+
+</catalog>

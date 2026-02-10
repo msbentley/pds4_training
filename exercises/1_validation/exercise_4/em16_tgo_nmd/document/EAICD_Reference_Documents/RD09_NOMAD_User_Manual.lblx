@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1M00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Document 
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1M00.xsd" 
+  xmlns="http://pds.nasa.gov/pds4/pds/v1" 
+  xmlns:psa="http://psa.esa.int/psa/v1" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <Identification_Area>
+  
+    <logical_identifier>urn:esa:psa:em16_tgo_nmd:document:nomad_user_manual</logical_identifier>
+    <version_id>2.0</version_id>
+    <title>NOMAD PFM User Manual</title>
+    <information_model_version>1.22.0.0</information_model_version>
+    <product_class>Product_Document</product_class>
+	
+        <Citation_Information>
+            <publication_year>2006</publication_year>
+            <description>This is the description</description>
+            <List_Author>
+                <Person>
+                    <given_name>An</given_name>
+                    <family_name>Author</family_name>
+                </Person>
+            </List_Author>
+        </Citation_Information>
+    
+   <Modification_History>
+      	<Modification_Detail>
+        		<modification_date>2019-09-03</modification_date>
+        		<version_id>1.0</version_id>
+        		<description>First version to support Issue 1 Rev 13 of EAICD</description>
+      	</Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2021-01-20</modification_date>
+            <version_id>1.1</version_id>
+            <description>Update to IM 1.15, change spacecraft.TGO to host.TGO, delete DOI from document class</description>
+        </Modification_Detail>
+        <Modification_Detail>
+          <modification_date>2024-04-01</modification_date>
+          <version_id>2.0</version_id>
+          <description>Update to IM 1.21</description>
+        </Modification_Detail>
+    </Modification_History>
+	
+  </Identification_Area>
+  
+  <Context_Area>
+    
+		<Investigation_Area>
+      		<name>EXOMARS</name>
+      		<type>Mission</type>
+      		<Internal_Reference>
+      			<lid_reference>urn:esa:psa:context:investigation:mission.em16</lid_reference>
+        		<reference_type>document_to_investigation</reference_type>
+      		</Internal_Reference>
+    	</Investigation_Area>
+
+    <Observing_System>
+      <name>Observing System for TGO+*Instrument*</name>
+      
+      <Observing_System_Component>
+        <name>TGO</name>
+        <type>Host</type>
+        <description>Instrument Host</description>
+        <Internal_Reference>
+          <lid_reference>urn:esa:psa:context:instrument_host:spacecraft.tgo</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+          <comment>Reference to TGO Context File </comment>
+        </Internal_Reference> 
+      </Observing_System_Component>
+      
+      <Observing_System_Component>
+        <name>NOMAD</name>
+        <type>Instrument</type>
+        <description>Instrument NOMAD</description>
+        <Internal_Reference>
+          <lid_reference>urn:esa:psa:context:instrument:tgo.nomad</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+
+
+  </Context_Area>
+  
+   <Document>
+      <!--publication_date nilReason="unknown" xsi:nil="true"></publication_date-->
+	  <publication_date>2015</publication_date>
+      <document_editions>1</document_editions>
+      <description>
+        User Manual delivered with the NOMAD instrument
+      </description>
+	  	<Document_Edition>
+         <edition_name>PDF version</edition_name>
+         <language>English</language>
+         <files>1</files>
+         <description>PDF instance of the document</description>
+         <Document_File>
+           <file_name>RD09_NOMAD_User_Manual.pdf</file_name>
+            <creation_date_time>2015-12-22T00:00:00.000Z</creation_date_time>
+           <file_size unit="byte">33308699</file_size>
+           <md5_checksum>4afff77d84621d9441d66ae5a6703364</md5_checksum>
+            <document_standard_id>PDF/A</document_standard_id>
+         </Document_File>
+      </Document_Edition>
+      <List_Author>
+        <Person>
+          <given_name>An</given_name>
+          <family_name>Author</family_name>
+        </Person>
+      </List_Author>
+    </Document>
+  
+</Product_Document>

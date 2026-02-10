@@ -1,0 +1,2434 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1M00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://psa.esa.int/psa/v1/PDS4_PSA_1F00_1300.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/geom/v1/PDS4_GEOM_1F00_1910.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://psa.esa.int/psa/em16/v1/PDS4_EM16_1F00_1200.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://psa.esa.int/psa/em16/tgo/nmd/v1/PDS4_EM16_TGO_NMD_1F00_1200.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational 
+  xmlns="http://pds.nasa.gov/pds4/pds/v1" 
+  xmlns:geom="http://pds.nasa.gov/pds4/geom/v1" 
+  xmlns:psa="http://psa.esa.int/psa/v1" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:em16_tgo_nmd="http://psa.esa.int/psa/em16/tgo/nmd/v1" 
+  xsi:schemaLocation="
+    http://pds.nasa.gov/pds4/pds/v1     https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1M00.xsd     
+    http://psa.esa.int/psa/v1     https://psa.esa.int/psa/v1/PDS4_PSA_1F00_1300.xsd     
+    http://pds.nasa.gov/pds4/geom/v1     https://pds.nasa.gov/pds4/geom/v1/PDS4_GEOM_1F00_1910.xsd     
+    http://psa.esa.int/psa/em16/tgo/nmd/v1     https://psa.esa.int/psa/em16/tgo/nmd/v1/PDS4_EM16_TGO_NMD_1F00_1200.xsd
+    http://psa.esa.int/psa/em16/v1 https://psa.esa.int/psa/em16/v1/PDS4_EM16_1F00_1200.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:esa:psa:em16_tgo_nmd:data_calibrated:nmd_cal_sc_uvis_20231231t221819-20231231t232113-d</logical_identifier>
+    <version_id>4.0</version_id>
+    <title>NOMAD Experiment</title>
+    <information_model_version>1.22.0.0</information_model_version>
+    <product_class>Product_Observational</product_class>
+        <Citation_Information>
+            <publication_year>2006</publication_year>
+            <description>This is the NOMAD browse collection</description>
+            <List_Author>
+                <Person>
+                    <given_name>An</given_name>
+                    <family_name>Author</family_name>
+                </Person>
+            </List_Author>
+        </Citation_Information>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2023-12-01</modification_date>
+        <version_id>4.0</version_id>
+        <description>Fourth version with some minor bug fixes</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Observation_Area>
+    <comment>Observational Intent</comment>
+    <Time_Coordinates>
+      <start_date_time>2023-12-31T22:19:00.411Z</start_date_time>
+      <stop_date_time>2023-12-31T23:20:45.073Z</stop_date_time>
+      <solar_longitude unit="deg">173.538</solar_longitude>
+    </Time_Coordinates>
+    <Primary_Result_Summary>
+      <purpose>Science</purpose>
+      <processing_level>Calibrated</processing_level>
+      <description>NOMAD UVIS Calibrated Science Product</description>
+      <Science_Facets>
+        <wavelength_range>Ultraviolet</wavelength_range>
+        <wavelength_range>Visible</wavelength_range>
+        <domain>Atmosphere</domain>
+        <discipline_name>Atmospheres</discipline_name>
+      </Science_Facets>
+    </Primary_Result_Summary>
+    <Investigation_Area>
+      <name>ExoMars 2016</name>
+      <type>Mission</type>
+      <Internal_Reference>
+        <lid_reference>urn:esa:psa:context:investigation:mission.em16</lid_reference>
+        <reference_type>data_to_investigation</reference_type>
+      </Internal_Reference>
+    </Investigation_Area>
+    <Observing_System>
+      <description>Observing System for TGO+NOMAD</description>
+      <Observing_System_Component>
+        <name>TGO</name>
+        <type>Host</type>
+        <description>Instrument Host</description>
+        <Internal_Reference>
+          <lid_reference>urn:esa:psa:context:instrument_host:spacecraft.tgo</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>NOMAD</name>
+        <type>Instrument</type>
+        <description>NOMAD is a three channel spectrometer operating in the infrared and UV-visible</description>
+        <Internal_Reference>
+          <lid_reference>urn:esa:psa:context:instrument:tgo.nomad</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Target_Identification>
+      <name>Mars</name>
+      <type>Planet</type>
+      <description>The fourth planet from the Sun</description>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+        <reference_type>data_to_target</reference_type>
+      </Internal_Reference>
+    </Target_Identification>
+    <Mission_Area>
+      <psa:Mission_Information>
+        <psa:mission_phase_name>Science Phase</psa:mission_phase_name>
+        <psa:mission_phase_identifier>psp</psa:mission_phase_identifier>
+        <psa:start_orbit_number>27236</psa:start_orbit_number>
+      </psa:Mission_Information>
+      <psa:Sub-Instrument>
+        <psa:identifier>UVIS</psa:identifier>
+        <psa:name>NOMAD Ultraviolet-Visible Nadir Channel</psa:name>
+        <psa:type>Spectrometer</psa:type>
+      </psa:Sub-Instrument>
+      <psa:Processing_Context>
+        <psa:processing_software_title>BIRA-IASB Data Processing Pipeline</psa:processing_software_title>
+        <psa:processing_software_version>1.5-161 (2023-12-01)</psa:processing_software_version>
+      </psa:Processing_Context>
+      <em16_tgo_nmd:Telecommand20>
+        <em16_tgo_nmd:so_start_time>0</em16_tgo_nmd:so_start_time>
+        <em16_tgo_nmd:so_start_science1>0</em16_tgo_nmd:so_start_science1>
+        <em16_tgo_nmd:so_start_science2>0</em16_tgo_nmd:so_start_science2>
+        <em16_tgo_nmd:so_duration_reference1>0</em16_tgo_nmd:so_duration_reference1>
+        <em16_tgo_nmd:so_duration_reference2>0</em16_tgo_nmd:so_duration_reference2>
+        <em16_tgo_nmd:so_duration_time>0</em16_tgo_nmd:so_duration_time>
+        <em16_tgo_nmd:so_cop_general>0</em16_tgo_nmd:so_cop_general>
+        <em16_tgo_nmd:so_cop_precooling>0</em16_tgo_nmd:so_cop_precooling>
+        <em16_tgo_nmd:so_cop_science1>0</em16_tgo_nmd:so_cop_science1>
+        <em16_tgo_nmd:so_cop_science2>0</em16_tgo_nmd:so_cop_science2>
+        <em16_tgo_nmd:lno_start_time>0</em16_tgo_nmd:lno_start_time>
+        <em16_tgo_nmd:lno_start_science1>0</em16_tgo_nmd:lno_start_science1>
+        <em16_tgo_nmd:lno_start_science2>0</em16_tgo_nmd:lno_start_science2>
+        <em16_tgo_nmd:lno_duration_reference1>0</em16_tgo_nmd:lno_duration_reference1>
+        <em16_tgo_nmd:lno_duration_reference2>0</em16_tgo_nmd:lno_duration_reference2>
+        <em16_tgo_nmd:lno_duration_time>0</em16_tgo_nmd:lno_duration_time>
+        <em16_tgo_nmd:lno_cop_general>0</em16_tgo_nmd:lno_cop_general>
+        <em16_tgo_nmd:lno_cop_precooling>0</em16_tgo_nmd:lno_cop_precooling>
+        <em16_tgo_nmd:lno_cop_science1>0</em16_tgo_nmd:lno_cop_science1>
+        <em16_tgo_nmd:lno_cop_science2>0</em16_tgo_nmd:lno_cop_science2>
+        <em16_tgo_nmd:uvis_start_time>10</em16_tgo_nmd:uvis_start_time>
+        <em16_tgo_nmd:uvis_duration_time>3764</em16_tgo_nmd:uvis_duration_time>
+        <em16_tgo_nmd:uvis_cop_row>85</em16_tgo_nmd:uvis_cop_row>
+      </em16_tgo_nmd:Telecommand20>
+      <em16_tgo_nmd:Instrument_Information>
+        <em16_tgo_nmd:cop_table_version_description>Version of the COP table in instrument</em16_tgo_nmd:cop_table_version_description>
+        <em16_tgo_nmd:cop_table_version>20231028_120000</em16_tgo_nmd:cop_table_version>
+        <em16_tgo_nmd:xcalib_ref_description>Reference to the calibration procedure used to calibrate the X axis</em16_tgo_nmd:xcalib_ref_description>
+        <em16_tgo_nmd:xcalib_ref>June 2022 4th order + temperature fit</em16_tgo_nmd:xcalib_ref>
+        <em16_tgo_nmd:ycalib_ref_description>Reference to the calibration procedure used to calibrate the Y axis</em16_tgo_nmd:ycalib_ref_description>
+        <em16_tgo_nmd:ycalib_ref>N/A</em16_tgo_nmd:ycalib_ref>
+        <em16_tgo_nmd:yerr_ref_description>Reference to the procedure used to calculate the error on the Y axis</em16_tgo_nmd:yerr_ref_description>
+        <em16_tgo_nmd:yerr_ref>N/A</em16_tgo_nmd:yerr_ref>
+        <em16_tgo_nmd:observation_mode_description>Description of observation mode, e.g. fullscan, calibration, nominal science, etc.</em16_tgo_nmd:observation_mode_description>
+        <em16_tgo_nmd:observation_mode>Nominal Science</em16_tgo_nmd:observation_mode>
+        <em16_tgo_nmd:geometry_description>Description of the FOV pointing geometry</em16_tgo_nmd:geometry_description>
+        <em16_tgo_nmd:geometry>day</em16_tgo_nmd:geometry>
+        <em16_tgo_nmd:desc_description>Measurement description based on COP row executed</em16_tgo_nmd:desc_description>
+        <em16_tgo_nmd:desc>NADIR: Horizontal Bin (57:245;0:1047)-Tint = 7000 ms -20 bit - Rhythm = 12409 ms</em16_tgo_nmd:desc>
+        <em16_tgo_nmd:channel_name_description>Name of the channel and telescope used, and number of diffraction order combinations (if applicable)</em16_tgo_nmd:channel_name_description>
+        <em16_tgo_nmd:channel_name>UVIS Nadir</em16_tgo_nmd:channel_name>
+        <em16_tgo_nmd:nspec_description>Number of spectra in the file</em16_tgo_nmd:nspec_description>
+        <em16_tgo_nmd:nspec>299</em16_tgo_nmd:nspec>
+        <em16_tgo_nmd:observation_type_description>Letter taken from ITL file descriptor e.g. C = calibration, I = ingress occultation, E = egress, N = nadir, etc.</em16_tgo_nmd:observation_type_description>
+        <em16_tgo_nmd:observation_type>D</em16_tgo_nmd:observation_type>
+      </em16_tgo_nmd:Instrument_Information>
+      <em16_tgo_nmd:Quality_Flags>
+        <em16_tgo_nmd:hsk_disturbed_description>Housekeeping values are disturbed (e.g. by electrical interference)</em16_tgo_nmd:hsk_disturbed_description>
+        <em16_tgo_nmd:hsk_disturbed>0</em16_tgo_nmd:hsk_disturbed>
+        <em16_tgo_nmd:hsk_out_of_bounds_description>Housekeeping values are out of bounds</em16_tgo_nmd:hsk_out_of_bounds_description>
+        <em16_tgo_nmd:hsk_out_of_bounds>0</em16_tgo_nmd:hsk_out_of_bounds>
+        <em16_tgo_nmd:discarded_packets_description>Packet(s) were discarded during this observation</em16_tgo_nmd:discarded_packets_description>
+        <em16_tgo_nmd:discarded_packets>0</em16_tgo_nmd:discarded_packets>
+        <em16_tgo_nmd:bad_pixels_hinterpolated_description>Bad pixels have been removed by horizontal interpolation</em16_tgo_nmd:bad_pixels_hinterpolated_description>
+        <em16_tgo_nmd:bad_pixels_hinterpolated>0</em16_tgo_nmd:bad_pixels_hinterpolated>
+        <em16_tgo_nmd:bad_pixels_vinterpolated_description>Bad pixels have been removed by vertical interpolation</em16_tgo_nmd:bad_pixels_vinterpolated_description>
+        <em16_tgo_nmd:bad_pixels_vinterpolated>0</em16_tgo_nmd:bad_pixels_vinterpolated>
+        <em16_tgo_nmd:bad_pixels_masked_description>Bad pixels have been removed by masking</em16_tgo_nmd:bad_pixels_masked_description>
+        <em16_tgo_nmd:bad_pixels_masked>1</em16_tgo_nmd:bad_pixels_masked>
+        <em16_tgo_nmd:detector_saturated_description>Detector saturated during measurement (N/A for calibrations)</em16_tgo_nmd:detector_saturated_description>
+        <em16_tgo_nmd:detector_saturated>0</em16_tgo_nmd:detector_saturated>
+        <em16_tgo_nmd:lno_straylight_description>(LNO only:) Geometric straylight detected in 1 or more frames</em16_tgo_nmd:lno_straylight_description>
+        <em16_tgo_nmd:lno_straylight>0</em16_tgo_nmd:lno_straylight>
+        <em16_tgo_nmd:high_instrument_temperature_description>(LNO only:) Channel temperature exceeds normal operating temperature (+10C on baseplate)</em16_tgo_nmd:high_instrument_temperature_description>
+        <em16_tgo_nmd:high_instrument_temperature>0</em16_tgo_nmd:high_instrument_temperature>
+        <em16_tgo_nmd:pointing_error_description>Pointing is not correct or perturbation detected</em16_tgo_nmd:pointing_error_description>
+        <em16_tgo_nmd:pointing_error>0</em16_tgo_nmd:pointing_error>
+        <em16_tgo_nmd:uvis_occ_boresight_description>UVIS solar occultation boresight was used instead of default SO</em16_tgo_nmd:uvis_occ_boresight_description>
+        <em16_tgo_nmd:uvis_occ_boresight>0</em16_tgo_nmd:uvis_occ_boresight>
+        <em16_tgo_nmd:lno_occ_boresight_description>LNO solar occultation boresight was used instead of default SO</em16_tgo_nmd:lno_occ_boresight_description>
+        <em16_tgo_nmd:lno_occ_boresight>0</em16_tgo_nmd:lno_occ_boresight>
+        <em16_tgo_nmd:mir_occ_boresight_description>ACS MIR solar occultation boresight was used instead of default SO</em16_tgo_nmd:mir_occ_boresight_description>
+        <em16_tgo_nmd:mir_occ_boresight>0</em16_tgo_nmd:mir_occ_boresight>
+        <em16_tgo_nmd:tirvm_occ_boresight_description>ACS TIRVIM solar occultation boresight was used instead of default SO</em16_tgo_nmd:tirvm_occ_boresight_description>
+        <em16_tgo_nmd:tirvm_occ_boresight>0</em16_tgo_nmd:tirvm_occ_boresight>
+        <em16_tgo_nmd:calibration_failed_description>Calibration failed</em16_tgo_nmd:calibration_failed_description>
+        <em16_tgo_nmd:calibration_failed>0</em16_tgo_nmd:calibration_failed>
+      </em16_tgo_nmd:Quality_Flags>
+      <em16_tgo_nmd:UVIS_Observation>
+        <em16_tgo_nmd:acquisition_mode_description>Binning selection: 0 = unbinned, 1 = vertical binning, 2 = horizontal binning</em16_tgo_nmd:acquisition_mode_description>
+        <em16_tgo_nmd:acquisition_mode>2</em16_tgo_nmd:acquisition_mode>
+        <em16_tgo_nmd:bias_average_description>Number of bias measurements: 0 = 1 frame per acquisition; 1 = 2 frames per acquisition, etc.</em16_tgo_nmd:bias_average_description>
+        <em16_tgo_nmd:bias_average>0</em16_tgo_nmd:bias_average>
+        <em16_tgo_nmd:dark_average_description>Number of dark measurements: 0 = 1 frame per acquisition; 1 =2 frames per acquisition, etc.</em16_tgo_nmd:dark_average_description>
+        <em16_tgo_nmd:dark_average>0</em16_tgo_nmd:dark_average>
+        <em16_tgo_nmd:science_average_description>Number of science measurements: 0 = 1  frame per acquisition; 1 = 2 frames per acquisition, etc.</em16_tgo_nmd:science_average_description>
+        <em16_tgo_nmd:science_average>0</em16_tgo_nmd:science_average>
+        <em16_tgo_nmd:vstart_description>Number of first recorded line of the detector</em16_tgo_nmd:vstart_description>
+        <em16_tgo_nmd:vstart>57</em16_tgo_nmd:vstart>
+        <em16_tgo_nmd:vend_description>Number of last recorded line of the detector</em16_tgo_nmd:vend_description>
+        <em16_tgo_nmd:vend>245</em16_tgo_nmd:vend>
+        <em16_tgo_nmd:hstart_description>Number of first recorded row of the detector</em16_tgo_nmd:hstart_description>
+        <em16_tgo_nmd:hstart>0</em16_tgo_nmd:hstart>
+        <em16_tgo_nmd:hend_description>Number of last recorded row of the detector</em16_tgo_nmd:hend_description>
+        <em16_tgo_nmd:hend>1047</em16_tgo_nmd:hend>
+        <em16_tgo_nmd:start_delay_description>Number of 5 millisecond increments to pause between receipt of start command and actual acquisition</em16_tgo_nmd:start_delay_description>
+        <em16_tgo_nmd:start_delay>1</em16_tgo_nmd:start_delay>
+        <em16_tgo_nmd:acquisition_delay_description>Number of 5 millisecond increments to pause between receipt of start command and actual acquisition</em16_tgo_nmd:acquisition_delay_description>
+        <em16_tgo_nmd:acquisition_delay>3392</em16_tgo_nmd:acquisition_delay>
+        <em16_tgo_nmd:number_of_acquisitions_description>Number of acquisitions to perform before doing a dark measurement</em16_tgo_nmd:number_of_acquisitions_description>
+        <em16_tgo_nmd:number_of_acquisitions>65534</em16_tgo_nmd:number_of_acquisitions>
+        <em16_tgo_nmd:number_of_flushes_description>Number of flushes to perform to remove charge accumulated on detector</em16_tgo_nmd:number_of_flushes_description>
+        <em16_tgo_nmd:number_of_flushes>242</em16_tgo_nmd:number_of_flushes>
+        <em16_tgo_nmd:dark_to_observation_steps_description>Number of steps to drive motor from dark to observation position</em16_tgo_nmd:dark_to_observation_steps_description>
+        <em16_tgo_nmd:dark_to_observation_steps>5</em16_tgo_nmd:dark_to_observation_steps>
+        <em16_tgo_nmd:observation_to_dark_steps_description>Number of steps to drive motor from observation to dark position</em16_tgo_nmd:observation_to_dark_steps_description>
+        <em16_tgo_nmd:observation_to_dark_steps>5</em16_tgo_nmd:observation_to_dark_steps>
+        <em16_tgo_nmd:horizontal_and_combined_binning_size_description>Bits 0 to 3: values 0 to 15 indicate a horizontal binning factor of 1 to 16; Bit 7: 1 to enable combined binning (with square super-pixels)</em16_tgo_nmd:horizontal_and_combined_binning_size_description>
+        <em16_tgo_nmd:horizontal_and_combined_binning_size>3</em16_tgo_nmd:horizontal_and_combined_binning_size>
+      </em16_tgo_nmd:UVIS_Observation>
+      <em16_tgo_nmd:All_Channels>
+        <em16_tgo_nmd:integration_time_description>Detector integration time in milliseconds</em16_tgo_nmd:integration_time_description>
+        <em16_tgo_nmd:integration_time>7000</em16_tgo_nmd:integration_time>
+      </em16_tgo_nmd:All_Channels>
+      <em16_tgo_nmd:Geometry_Information>
+        <em16_tgo_nmd:first_lon_description>First surface longitude at the centre of the field of view</em16_tgo_nmd:first_lon_description>
+        <em16_tgo_nmd:first_lon>-114.090</em16_tgo_nmd:first_lon>
+        <em16_tgo_nmd:last_lon_description>Last surface longitude at the centre of the field of view</em16_tgo_nmd:last_lon_description>
+        <em16_tgo_nmd:last_lon>82.904</em16_tgo_nmd:last_lon>
+        <em16_tgo_nmd:min_lon_description>Minimum surface longitude at the centre of the field of view</em16_tgo_nmd:min_lon_description>
+        <em16_tgo_nmd:min_lon>-114.090</em16_tgo_nmd:min_lon>
+        <em16_tgo_nmd:max_lon_description>Maximum surface longitude at the centre of the field of view</em16_tgo_nmd:max_lon_description>
+        <em16_tgo_nmd:max_lon>82.904</em16_tgo_nmd:max_lon>
+        <em16_tgo_nmd:first_lat_description>First surface latitude at the centre of the field of view</em16_tgo_nmd:first_lat_description>
+        <em16_tgo_nmd:first_lat>-75.748</em16_tgo_nmd:first_lat>
+        <em16_tgo_nmd:last_lat_description>Last surface latitude at the centre of the field of view</em16_tgo_nmd:last_lat_description>
+        <em16_tgo_nmd:last_lat>74.291</em16_tgo_nmd:last_lat>
+        <em16_tgo_nmd:min_lat_description>Minimum surface latitude at the centre of the field of view</em16_tgo_nmd:min_lat_description>
+        <em16_tgo_nmd:min_lat>-75.826</em16_tgo_nmd:min_lat>
+        <em16_tgo_nmd:max_lat_description>Maximum surface latitude at the centre of the field of view</em16_tgo_nmd:max_lat_description>
+        <em16_tgo_nmd:max_lat>75.817</em16_tgo_nmd:max_lat>
+        <em16_tgo_nmd:first_lst_description>First surface local solar time in hours at the centre of the field of view</em16_tgo_nmd:first_lst_description>
+        <em16_tgo_nmd:first_lst>5.634</em16_tgo_nmd:first_lst>
+        <em16_tgo_nmd:last_lst_description>Last surface local solar time in hours at the centre of the field of view</em16_tgo_nmd:last_lst_description>
+        <em16_tgo_nmd:last_lst>19.769</em16_tgo_nmd:last_lst>
+        <em16_tgo_nmd:first_incidence_angle_description>First surface solar incidence angle at the centre of the field of view</em16_tgo_nmd:first_incidence_angle_description>
+        <em16_tgo_nmd:first_incidence_angle>94.406</em16_tgo_nmd:first_incidence_angle>
+        <em16_tgo_nmd:last_incidence_angle_description>Last surface solar incidence angle at the centre of the field of view</em16_tgo_nmd:last_incidence_angle_description>
+        <em16_tgo_nmd:last_incidence_angle>94.250</em16_tgo_nmd:last_incidence_angle>
+        <em16_tgo_nmd:min_incidence_angle_description>Minimum surface solar incidence angle at the centre of the field of view</em16_tgo_nmd:min_incidence_angle_description>
+        <em16_tgo_nmd:min_incidence_angle>0.188</em16_tgo_nmd:min_incidence_angle>
+        <em16_tgo_nmd:max_incidence_angle_description>Maximum surface solar incidence angle at the centre of the field of view</em16_tgo_nmd:max_incidence_angle_description>
+        <em16_tgo_nmd:max_incidence_angle>94.406</em16_tgo_nmd:max_incidence_angle>
+        <em16_tgo_nmd:first_emission_angle_description>First surface emission angle at the centre of the field of view</em16_tgo_nmd:first_emission_angle_description>
+        <em16_tgo_nmd:first_emission_angle>0.221</em16_tgo_nmd:first_emission_angle>
+        <em16_tgo_nmd:last_emission_angle_description>Last surface emission angle at the centre of the field of view</em16_tgo_nmd:last_emission_angle_description>
+        <em16_tgo_nmd:last_emission_angle>0.167</em16_tgo_nmd:last_emission_angle>
+        <em16_tgo_nmd:min_emission_angle_description>Minimum surface emission angle at the centre of the field of view</em16_tgo_nmd:min_emission_angle_description>
+        <em16_tgo_nmd:min_emission_angle>0.010</em16_tgo_nmd:min_emission_angle>
+        <em16_tgo_nmd:max_emission_angle_description>Maximum surface emission angle at the centre of the field of view</em16_tgo_nmd:max_emission_angle_description>
+        <em16_tgo_nmd:max_emission_angle>14.431</em16_tgo_nmd:max_emission_angle>
+        <em16_tgo_nmd:first_phase_angle_description>First surface phase angle at the centre of the field of view</em16_tgo_nmd:first_phase_angle_description>
+        <em16_tgo_nmd:first_phase_angle>94.192</em16_tgo_nmd:first_phase_angle>
+        <em16_tgo_nmd:last_phase_angle_description>Last surface phase angle at the centre of the field of view</em16_tgo_nmd:last_phase_angle_description>
+        <em16_tgo_nmd:last_phase_angle>94.405</em16_tgo_nmd:last_phase_angle>
+        <em16_tgo_nmd:min_phase_angle_description>Minimum surface phase angle at the centre of the field of view</em16_tgo_nmd:min_phase_angle_description>
+        <em16_tgo_nmd:min_phase_angle>0.682</em16_tgo_nmd:min_phase_angle>
+        <em16_tgo_nmd:max_phase_angle_description>Maximum surface phase angle at the centre of the field of view</em16_tgo_nmd:max_phase_angle_description>
+        <em16_tgo_nmd:max_phase_angle>94.405</em16_tgo_nmd:max_phase_angle>
+        <em16_tgo_nmd:first_sub_obs_lon_description>First sub-satellite longitude</em16_tgo_nmd:first_sub_obs_lon_description>
+        <em16_tgo_nmd:first_sub_obs_lon>-114.171</em16_tgo_nmd:first_sub_obs_lon>
+        <em16_tgo_nmd:last_sub_obs_lon_description>Last sub-satellite longitude</em16_tgo_nmd:last_sub_obs_lon_description>
+        <em16_tgo_nmd:last_sub_obs_lon>82.992</em16_tgo_nmd:last_sub_obs_lon>
+        <em16_tgo_nmd:min_sub_obs_lon_description>Minimum sub-satellite longitude</em16_tgo_nmd:min_sub_obs_lon_description>
+        <em16_tgo_nmd:min_sub_obs_lon>-114.171</em16_tgo_nmd:min_sub_obs_lon>
+        <em16_tgo_nmd:max_sub_obs_lon_description>Maximum sub-satellite longitude</em16_tgo_nmd:max_sub_obs_lon_description>
+        <em16_tgo_nmd:max_sub_obs_lon>82.992</em16_tgo_nmd:max_sub_obs_lon>
+        <em16_tgo_nmd:first_sub_obs_lat_description>First sub-satellite latitude</em16_tgo_nmd:first_sub_obs_lat_description>
+        <em16_tgo_nmd:first_sub_obs_lat>-75.771</em16_tgo_nmd:first_sub_obs_lat>
+        <em16_tgo_nmd:last_sub_obs_lat_description>Last sub-satellite latitude</em16_tgo_nmd:last_sub_obs_lat_description>
+        <em16_tgo_nmd:last_sub_obs_lat>74.310</em16_tgo_nmd:last_sub_obs_lat>
+        <em16_tgo_nmd:min_sub_obs_lat_description>Minimum sub-satellite latitude</em16_tgo_nmd:min_sub_obs_lat_description>
+        <em16_tgo_nmd:min_sub_obs_lat>-75.850</em16_tgo_nmd:min_sub_obs_lat>
+        <em16_tgo_nmd:max_sub_obs_lat_description>Maximum sub-satellite latitude</em16_tgo_nmd:max_sub_obs_lat_description>
+        <em16_tgo_nmd:max_sub_obs_lat>75.844</em16_tgo_nmd:max_sub_obs_lat>
+        <em16_tgo_nmd:first_lsubs_description>First planetocentric longitude Ls</em16_tgo_nmd:first_lsubs_description>
+        <em16_tgo_nmd:first_lsubs>173.538</em16_tgo_nmd:first_lsubs>
+        <em16_tgo_nmd:last_lsubs_description>Last planetocentric longitude Ls</em16_tgo_nmd:last_lsubs_description>
+        <em16_tgo_nmd:last_lsubs>173.561</em16_tgo_nmd:last_lsubs>
+        <em16_tgo_nmd:first_obs_distance_description>First distance between satellite and Mars barycentre</em16_tgo_nmd:first_obs_distance_description>
+        <em16_tgo_nmd:first_obs_distance>3758.726</em16_tgo_nmd:first_obs_distance>
+        <em16_tgo_nmd:last_obs_distance_description>Last distance between satellite and Mars barycentre</em16_tgo_nmd:last_obs_distance_description>
+        <em16_tgo_nmd:last_obs_distance>3811.337</em16_tgo_nmd:last_obs_distance>
+        <em16_tgo_nmd:min_obs_distance_description>Minimum distance between satellite and Mars barycentre</em16_tgo_nmd:min_obs_distance_description>
+        <em16_tgo_nmd:min_obs_distance>3758.719</em16_tgo_nmd:min_obs_distance>
+        <em16_tgo_nmd:max_obs_distance_description>Maximum distance between satellite and Mars barycentre</em16_tgo_nmd:max_obs_distance_description>
+        <em16_tgo_nmd:max_obs_distance>3811.534</em16_tgo_nmd:max_obs_distance>
+        <em16_tgo_nmd:first_sub_sol_lon_description>First sub-solar longitude</em16_tgo_nmd:first_sub_sol_lon_description>
+        <em16_tgo_nmd:first_sub_sol_lon>-18.600</em16_tgo_nmd:first_sub_sol_lon>
+        <em16_tgo_nmd:last_sub_sol_lon_description>Last sub-solar longitude</em16_tgo_nmd:last_sub_sol_lon_description>
+        <em16_tgo_nmd:last_sub_sol_lon>-33.624</em16_tgo_nmd:last_sub_sol_lon>
+        <em16_tgo_nmd:first_sub_sol_lat_description>First sub-solar latitude</em16_tgo_nmd:first_sub_sol_lat_description>
+        <em16_tgo_nmd:first_sub_sol_lat>2.746</em16_tgo_nmd:first_sub_sol_lat>
+        <em16_tgo_nmd:last_sub_sol_lat_description>Last sub-solar latitude</em16_tgo_nmd:last_sub_sol_lat_description>
+        <em16_tgo_nmd:last_sub_sol_lat>2.736</em16_tgo_nmd:last_sub_sol_lat>
+      </em16_tgo_nmd:Geometry_Information>
+    </Mission_Area>
+  </Observation_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+      <reference_type>data_to_document</reference_type>
+      <comment>TGO is orbiting Mars</comment>
+    </Internal_Reference>
+    <Internal_Reference>
+      <lid_reference>urn:esa:psa:em16_tgo_nmd:browse_calibrated:nmd_cal_sc_browse_20231231t221819-20231231t232113-d-uvis</lid_reference>
+      <reference_type>data_to_browse</reference_type>
+      <comment>Browse product for this observation</comment>
+    </Internal_Reference>
+    <Internal_Reference>
+      <lid_reference>urn:esa:psa:em16_tgo_nmd:data_partially_processed:nmd_par_sc_uvis_20231231t221841-20231231t232105-28-27236-1</lid_reference>
+      <reference_type>data_to_raw_product</reference_type>
+    </Internal_Reference>
+    <Source_Product_External>
+      <external_source_product_identifier>SCI__DNMD__036A6401_2023-365T22-18-17__00002.EXM</external_source_product_identifier>
+      <reference_type>data_to_telemetry_source_product</reference_type>
+      <curating_facility>ExoMars 16 Science Operations Center</curating_facility>
+    </Source_Product_External>
+  </Reference_List>
+  <File_Area_Observational>
+    <File>
+      <file_name>nmd_cal_sc_uvis_20231231T221819-20231231T232113-d.tab</file_name>
+      <local_identifier>nmd_cal_sc_uvis_20231231T221819-20231231T232113-d.tab</local_identifier>
+      <creation_date_time>2024-04-07T02:59:45.461Z</creation_date_time>
+      <file_size unit="byte">3245645</file_size>
+      <records>299</records>
+      <comment>Data File</comment>
+    </File>
+    <Table_Character>
+      <name>CAL_NOMAD_UVIS</name>
+      <offset unit="byte">0</offset>
+      <records>299</records>
+      <description>Data Product Definition</description>
+      <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+      <Record_Character>
+        <fields>178</fields>
+        <groups>4</groups>
+        <record_length unit="byte">10855</record_length>
+        <Field_Character>
+          <name>ObservationDatetimeStart</name>
+          <field_number>1</field_number>
+          <field_location unit="byte">1</field_location>
+          <data_type>ASCII_Date_Time_YMD_UTC</data_type>
+          <field_length unit="byte">28</field_length>
+          <description>UTC start datetime of measurement</description>
+        </Field_Character>
+        <Field_Character>
+          <name>ObservationDatetimeEnd</name>
+          <field_number>2</field_number>
+          <field_location unit="byte">29</field_location>
+          <data_type>ASCII_Date_Time_YMD_UTC</data_type>
+          <field_length unit="byte">28</field_length>
+          <description>UTC end datetime of measurement</description>
+        </Field_Character>
+        <Field_Character>
+          <name>DetectorTemperature</name>
+          <field_number>3</field_number>
+          <field_location unit="byte">57</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">13</field_length>
+          <unit>kelvin</unit>
+          <description>Temperature of detector during measurement</description>
+        </Field_Character>
+        <Field_Character>
+          <name>YValidFlag</name>
+          <field_number>4</field_number>
+          <field_location unit="byte">70</field_location>
+          <data_type>ASCII_Boolean</data_type>
+          <field_length unit="byte">2</field_length>
+          <description>1 = spectrum ok, 0 = error in spectrum</description>
+        </Field_Character>
+        <Field_Character>
+          <name>StartObsAlt</name>
+          <field_number>5</field_number>
+          <field_location unit="byte">72</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Starting altitude of observer above centre of Mars</description>
+        </Field_Character>
+        <Field_Character>
+          <name>EndObsAlt</name>
+          <field_number>6</field_number>
+          <field_location unit="byte">81</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Ending altitude of observer above centre of Mars</description>
+        </Field_Character>
+        <Field_Character>
+          <name>StartSubObsLon</name>
+          <field_number>7</field_number>
+          <field_location unit="byte">90</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting sub-satellite longitude</description>
+        </Field_Character>
+        <Field_Character>
+          <name>EndSubObsLon</name>
+          <field_number>8</field_number>
+          <field_location unit="byte">99</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending sub-satellite longitude</description>
+        </Field_Character>
+        <Field_Character>
+          <name>StartSubObsLat</name>
+          <field_number>9</field_number>
+          <field_location unit="byte">108</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting sub-satellite latitude</description>
+        </Field_Character>
+        <Field_Character>
+          <name>EndSubObsLat</name>
+          <field_number>10</field_number>
+          <field_location unit="byte">117</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending sub-satellite latitude</description>
+        </Field_Character>
+        <Field_Character>
+          <name>StartLSubS</name>
+          <field_number>11</field_number>
+          <field_location unit="byte">126</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting planetocentric longitude Ls</description>
+        </Field_Character>
+        <Field_Character>
+          <name>EndLSubS</name>
+          <field_number>12</field_number>
+          <field_location unit="byte">135</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending planetocentric longitude Ls</description>
+        </Field_Character>
+        <Field_Character>
+          <name>StartSubSolLon</name>
+          <field_number>13</field_number>
+          <field_location unit="byte">144</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting sub-solar longitude</description>
+        </Field_Character>
+        <Field_Character>
+          <name>EndSubSolLon</name>
+          <field_number>14</field_number>
+          <field_location unit="byte">153</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending sub-solar longitude</description>
+        </Field_Character>
+        <Field_Character>
+          <name>StartSubSolLat</name>
+          <field_number>15</field_number>
+          <field_location unit="byte">162</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting sub-solar latitude</description>
+        </Field_Character>
+        <Field_Character>
+          <name>EndSubSolLat</name>
+          <field_number>16</field_number>
+          <field_location unit="byte">171</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending sub-solar latitude</description>
+        </Field_Character>
+        <Field_Character>
+          <name>PointX0</name>
+          <field_number>17</field_number>
+          <field_location unit="byte">180</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <description>Relative X position of point w.r.t. bin or slit, where -1 to 1 define edges</description>
+        </Field_Character>
+        <Field_Character>
+          <name>PointY0</name>
+          <field_number>18</field_number>
+          <field_location unit="byte">189</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <description>Relative Y position of point w.r.t. bin or slit, where -1 to 1 define edges</description>
+        </Field_Character>
+        <Field_Character>
+          <name>LonStart0</name>
+          <field_number>19</field_number>
+          <field_location unit="byte">198</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting surface longitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LonEnd0</name>
+          <field_number>20</field_number>
+          <field_location unit="byte">207</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending surface longitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LatStart0</name>
+          <field_number>21</field_number>
+          <field_location unit="byte">216</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting surface latitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LatEnd0</name>
+          <field_number>22</field_number>
+          <field_location unit="byte">225</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending surface latitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LSTStart0</name>
+          <field_number>23</field_number>
+          <field_location unit="byte">234</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>hours</unit>
+          <description>Starting local solar time of surface point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LSTEnd0</name>
+          <field_number>24</field_number>
+          <field_location unit="byte">243</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>hours</unit>
+          <description>Ending local solar time of surface point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>IncidenceAngleStart0</name>
+          <field_number>25</field_number>
+          <field_location unit="byte">252</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting incidence angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>IncidenceAngleEnd0</name>
+          <field_number>26</field_number>
+          <field_location unit="byte">261</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending incidence angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>EmissionAngleStart0</name>
+          <field_number>27</field_number>
+          <field_location unit="byte">270</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting emission angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>EmissionAngleEnd0</name>
+          <field_number>28</field_number>
+          <field_location unit="byte">279</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending emission angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PhaseAngleStart0</name>
+          <field_number>29</field_number>
+          <field_location unit="byte">288</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting phase angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PhaseAngleEnd0</name>
+          <field_number>30</field_number>
+          <field_location unit="byte">297</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending phase angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceAltAreoidStart0</name>
+          <field_number>31</field_number>
+          <field_location unit="byte">306</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Starting height of the DSK surface above the areoid for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceAltAreoidEnd0</name>
+          <field_number>32</field_number>
+          <field_location unit="byte">315</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Ending height of the DSK surface above the areoid for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceRadiusStart0</name>
+          <field_number>33</field_number>
+          <field_location unit="byte">324</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Starting DSK surface radius for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceRadiusEnd0</name>
+          <field_number>34</field_number>
+          <field_location unit="byte">333</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Ending DSK surface radius for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PointX1</name>
+          <field_number>35</field_number>
+          <field_location unit="byte">342</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <description>Relative X position of point w.r.t. bin or slit, where -1 to 1 define edges</description>
+        </Field_Character>
+        <Field_Character>
+          <name>PointY1</name>
+          <field_number>36</field_number>
+          <field_location unit="byte">351</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <description>Relative Y position of point w.r.t. bin or slit, where -1 to 1 define edges</description>
+        </Field_Character>
+        <Field_Character>
+          <name>LonStart1</name>
+          <field_number>37</field_number>
+          <field_location unit="byte">360</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting surface longitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LonEnd1</name>
+          <field_number>38</field_number>
+          <field_location unit="byte">369</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending surface longitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LatStart1</name>
+          <field_number>39</field_number>
+          <field_location unit="byte">378</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting surface latitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LatEnd1</name>
+          <field_number>40</field_number>
+          <field_location unit="byte">387</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending surface latitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LSTStart1</name>
+          <field_number>41</field_number>
+          <field_location unit="byte">396</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>hours</unit>
+          <description>Starting local solar time of surface point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LSTEnd1</name>
+          <field_number>42</field_number>
+          <field_location unit="byte">405</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>hours</unit>
+          <description>Ending local solar time of surface point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>IncidenceAngleStart1</name>
+          <field_number>43</field_number>
+          <field_location unit="byte">414</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting incidence angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>IncidenceAngleEnd1</name>
+          <field_number>44</field_number>
+          <field_location unit="byte">423</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending incidence angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>EmissionAngleStart1</name>
+          <field_number>45</field_number>
+          <field_location unit="byte">432</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting emission angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>EmissionAngleEnd1</name>
+          <field_number>46</field_number>
+          <field_location unit="byte">441</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending emission angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PhaseAngleStart1</name>
+          <field_number>47</field_number>
+          <field_location unit="byte">450</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting phase angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PhaseAngleEnd1</name>
+          <field_number>48</field_number>
+          <field_location unit="byte">459</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending phase angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceAltAreoidStart1</name>
+          <field_number>49</field_number>
+          <field_location unit="byte">468</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Starting height of the DSK surface above the areoid for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceAltAreoidEnd1</name>
+          <field_number>50</field_number>
+          <field_location unit="byte">477</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Ending height of the DSK surface above the areoid for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceRadiusStart1</name>
+          <field_number>51</field_number>
+          <field_location unit="byte">486</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Starting DSK surface radius for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceRadiusEnd1</name>
+          <field_number>52</field_number>
+          <field_location unit="byte">495</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Ending DSK surface radius for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PointX2</name>
+          <field_number>53</field_number>
+          <field_location unit="byte">504</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <description>Relative X position of point w.r.t. bin or slit, where -1 to 1 define edges</description>
+        </Field_Character>
+        <Field_Character>
+          <name>PointY2</name>
+          <field_number>54</field_number>
+          <field_location unit="byte">513</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <description>Relative Y position of point w.r.t. bin or slit, where -1 to 1 define edges</description>
+        </Field_Character>
+        <Field_Character>
+          <name>LonStart2</name>
+          <field_number>55</field_number>
+          <field_location unit="byte">522</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting surface longitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LonEnd2</name>
+          <field_number>56</field_number>
+          <field_location unit="byte">531</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending surface longitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LatStart2</name>
+          <field_number>57</field_number>
+          <field_location unit="byte">540</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting surface latitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LatEnd2</name>
+          <field_number>58</field_number>
+          <field_location unit="byte">549</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending surface latitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LSTStart2</name>
+          <field_number>59</field_number>
+          <field_location unit="byte">558</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>hours</unit>
+          <description>Starting local solar time of surface point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LSTEnd2</name>
+          <field_number>60</field_number>
+          <field_location unit="byte">567</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>hours</unit>
+          <description>Ending local solar time of surface point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>IncidenceAngleStart2</name>
+          <field_number>61</field_number>
+          <field_location unit="byte">576</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting incidence angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>IncidenceAngleEnd2</name>
+          <field_number>62</field_number>
+          <field_location unit="byte">585</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending incidence angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>EmissionAngleStart2</name>
+          <field_number>63</field_number>
+          <field_location unit="byte">594</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting emission angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>EmissionAngleEnd2</name>
+          <field_number>64</field_number>
+          <field_location unit="byte">603</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending emission angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PhaseAngleStart2</name>
+          <field_number>65</field_number>
+          <field_location unit="byte">612</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting phase angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PhaseAngleEnd2</name>
+          <field_number>66</field_number>
+          <field_location unit="byte">621</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending phase angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceAltAreoidStart2</name>
+          <field_number>67</field_number>
+          <field_location unit="byte">630</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Starting height of the DSK surface above the areoid for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceAltAreoidEnd2</name>
+          <field_number>68</field_number>
+          <field_location unit="byte">639</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Ending height of the DSK surface above the areoid for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceRadiusStart2</name>
+          <field_number>69</field_number>
+          <field_location unit="byte">648</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Starting DSK surface radius for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceRadiusEnd2</name>
+          <field_number>70</field_number>
+          <field_location unit="byte">657</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Ending DSK surface radius for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PointX3</name>
+          <field_number>71</field_number>
+          <field_location unit="byte">666</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <description>Relative X position of point w.r.t. bin or slit, where -1 to 1 define edges</description>
+        </Field_Character>
+        <Field_Character>
+          <name>PointY3</name>
+          <field_number>72</field_number>
+          <field_location unit="byte">675</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <description>Relative Y position of point w.r.t. bin or slit, where -1 to 1 define edges</description>
+        </Field_Character>
+        <Field_Character>
+          <name>LonStart3</name>
+          <field_number>73</field_number>
+          <field_location unit="byte">684</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting surface longitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LonEnd3</name>
+          <field_number>74</field_number>
+          <field_location unit="byte">693</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending surface longitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LatStart3</name>
+          <field_number>75</field_number>
+          <field_location unit="byte">702</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting surface latitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LatEnd3</name>
+          <field_number>76</field_number>
+          <field_location unit="byte">711</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending surface latitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LSTStart3</name>
+          <field_number>77</field_number>
+          <field_location unit="byte">720</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>hours</unit>
+          <description>Starting local solar time of surface point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LSTEnd3</name>
+          <field_number>78</field_number>
+          <field_location unit="byte">729</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>hours</unit>
+          <description>Ending local solar time of surface point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>IncidenceAngleStart3</name>
+          <field_number>79</field_number>
+          <field_location unit="byte">738</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting incidence angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>IncidenceAngleEnd3</name>
+          <field_number>80</field_number>
+          <field_location unit="byte">747</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending incidence angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>EmissionAngleStart3</name>
+          <field_number>81</field_number>
+          <field_location unit="byte">756</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting emission angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>EmissionAngleEnd3</name>
+          <field_number>82</field_number>
+          <field_location unit="byte">765</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending emission angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PhaseAngleStart3</name>
+          <field_number>83</field_number>
+          <field_location unit="byte">774</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting phase angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PhaseAngleEnd3</name>
+          <field_number>84</field_number>
+          <field_location unit="byte">783</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending phase angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceAltAreoidStart3</name>
+          <field_number>85</field_number>
+          <field_location unit="byte">792</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Starting height of the DSK surface above the areoid for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceAltAreoidEnd3</name>
+          <field_number>86</field_number>
+          <field_location unit="byte">801</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Ending height of the DSK surface above the areoid for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceRadiusStart3</name>
+          <field_number>87</field_number>
+          <field_location unit="byte">810</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Starting DSK surface radius for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceRadiusEnd3</name>
+          <field_number>88</field_number>
+          <field_location unit="byte">819</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Ending DSK surface radius for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PointX4</name>
+          <field_number>89</field_number>
+          <field_location unit="byte">828</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <description>Relative X position of point w.r.t. bin or slit, where -1 to 1 define edges</description>
+        </Field_Character>
+        <Field_Character>
+          <name>PointY4</name>
+          <field_number>90</field_number>
+          <field_location unit="byte">837</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <description>Relative Y position of point w.r.t. bin or slit, where -1 to 1 define edges</description>
+        </Field_Character>
+        <Field_Character>
+          <name>LonStart4</name>
+          <field_number>91</field_number>
+          <field_location unit="byte">846</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting surface longitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LonEnd4</name>
+          <field_number>92</field_number>
+          <field_location unit="byte">855</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending surface longitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LatStart4</name>
+          <field_number>93</field_number>
+          <field_location unit="byte">864</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting surface latitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LatEnd4</name>
+          <field_number>94</field_number>
+          <field_location unit="byte">873</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending surface latitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LSTStart4</name>
+          <field_number>95</field_number>
+          <field_location unit="byte">882</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>hours</unit>
+          <description>Starting local solar time of surface point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LSTEnd4</name>
+          <field_number>96</field_number>
+          <field_location unit="byte">891</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>hours</unit>
+          <description>Ending local solar time of surface point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>IncidenceAngleStart4</name>
+          <field_number>97</field_number>
+          <field_location unit="byte">900</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting incidence angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>IncidenceAngleEnd4</name>
+          <field_number>98</field_number>
+          <field_location unit="byte">909</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending incidence angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>EmissionAngleStart4</name>
+          <field_number>99</field_number>
+          <field_location unit="byte">918</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting emission angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>EmissionAngleEnd4</name>
+          <field_number>100</field_number>
+          <field_location unit="byte">927</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending emission angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PhaseAngleStart4</name>
+          <field_number>101</field_number>
+          <field_location unit="byte">936</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting phase angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PhaseAngleEnd4</name>
+          <field_number>102</field_number>
+          <field_location unit="byte">945</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending phase angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceAltAreoidStart4</name>
+          <field_number>103</field_number>
+          <field_location unit="byte">954</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Starting height of the DSK surface above the areoid for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceAltAreoidEnd4</name>
+          <field_number>104</field_number>
+          <field_location unit="byte">963</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Ending height of the DSK surface above the areoid for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceRadiusStart4</name>
+          <field_number>105</field_number>
+          <field_location unit="byte">972</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Starting DSK surface radius for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceRadiusEnd4</name>
+          <field_number>106</field_number>
+          <field_location unit="byte">981</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Ending DSK surface radius for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PointX5</name>
+          <field_number>107</field_number>
+          <field_location unit="byte">990</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <description>Relative X position of point w.r.t. bin or slit, where -1 to 1 define edges</description>
+        </Field_Character>
+        <Field_Character>
+          <name>PointY5</name>
+          <field_number>108</field_number>
+          <field_location unit="byte">999</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <description>Relative Y position of point w.r.t. bin or slit, where -1 to 1 define edges</description>
+        </Field_Character>
+        <Field_Character>
+          <name>LonStart5</name>
+          <field_number>109</field_number>
+          <field_location unit="byte">1008</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting surface longitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LonEnd5</name>
+          <field_number>110</field_number>
+          <field_location unit="byte">1017</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending surface longitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LatStart5</name>
+          <field_number>111</field_number>
+          <field_location unit="byte">1026</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting surface latitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LatEnd5</name>
+          <field_number>112</field_number>
+          <field_location unit="byte">1035</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending surface latitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LSTStart5</name>
+          <field_number>113</field_number>
+          <field_location unit="byte">1044</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>hours</unit>
+          <description>Starting local solar time of surface point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LSTEnd5</name>
+          <field_number>114</field_number>
+          <field_location unit="byte">1053</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>hours</unit>
+          <description>Ending local solar time of surface point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>IncidenceAngleStart5</name>
+          <field_number>115</field_number>
+          <field_location unit="byte">1062</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting incidence angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>IncidenceAngleEnd5</name>
+          <field_number>116</field_number>
+          <field_location unit="byte">1071</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending incidence angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>EmissionAngleStart5</name>
+          <field_number>117</field_number>
+          <field_location unit="byte">1080</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting emission angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>EmissionAngleEnd5</name>
+          <field_number>118</field_number>
+          <field_location unit="byte">1089</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending emission angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PhaseAngleStart5</name>
+          <field_number>119</field_number>
+          <field_location unit="byte">1098</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting phase angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PhaseAngleEnd5</name>
+          <field_number>120</field_number>
+          <field_location unit="byte">1107</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending phase angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceAltAreoidStart5</name>
+          <field_number>121</field_number>
+          <field_location unit="byte">1116</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Starting height of the DSK surface above the areoid for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceAltAreoidEnd5</name>
+          <field_number>122</field_number>
+          <field_location unit="byte">1125</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Ending height of the DSK surface above the areoid for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceRadiusStart5</name>
+          <field_number>123</field_number>
+          <field_location unit="byte">1134</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Starting DSK surface radius for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceRadiusEnd5</name>
+          <field_number>124</field_number>
+          <field_location unit="byte">1143</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Ending DSK surface radius for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PointX6</name>
+          <field_number>125</field_number>
+          <field_location unit="byte">1152</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <description>Relative X position of point w.r.t. bin or slit, where -1 to 1 define edges</description>
+        </Field_Character>
+        <Field_Character>
+          <name>PointY6</name>
+          <field_number>126</field_number>
+          <field_location unit="byte">1161</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <description>Relative Y position of point w.r.t. bin or slit, where -1 to 1 define edges</description>
+        </Field_Character>
+        <Field_Character>
+          <name>LonStart6</name>
+          <field_number>127</field_number>
+          <field_location unit="byte">1170</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting surface longitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LonEnd6</name>
+          <field_number>128</field_number>
+          <field_location unit="byte">1179</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending surface longitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LatStart6</name>
+          <field_number>129</field_number>
+          <field_location unit="byte">1188</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting surface latitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LatEnd6</name>
+          <field_number>130</field_number>
+          <field_location unit="byte">1197</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending surface latitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LSTStart6</name>
+          <field_number>131</field_number>
+          <field_location unit="byte">1206</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>hours</unit>
+          <description>Starting local solar time of surface point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LSTEnd6</name>
+          <field_number>132</field_number>
+          <field_location unit="byte">1215</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>hours</unit>
+          <description>Ending local solar time of surface point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>IncidenceAngleStart6</name>
+          <field_number>133</field_number>
+          <field_location unit="byte">1224</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting incidence angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>IncidenceAngleEnd6</name>
+          <field_number>134</field_number>
+          <field_location unit="byte">1233</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending incidence angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>EmissionAngleStart6</name>
+          <field_number>135</field_number>
+          <field_location unit="byte">1242</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting emission angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>EmissionAngleEnd6</name>
+          <field_number>136</field_number>
+          <field_location unit="byte">1251</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending emission angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PhaseAngleStart6</name>
+          <field_number>137</field_number>
+          <field_location unit="byte">1260</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting phase angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PhaseAngleEnd6</name>
+          <field_number>138</field_number>
+          <field_location unit="byte">1269</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending phase angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceAltAreoidStart6</name>
+          <field_number>139</field_number>
+          <field_location unit="byte">1278</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Starting height of the DSK surface above the areoid for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceAltAreoidEnd6</name>
+          <field_number>140</field_number>
+          <field_location unit="byte">1287</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Ending height of the DSK surface above the areoid for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceRadiusStart6</name>
+          <field_number>141</field_number>
+          <field_location unit="byte">1296</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Starting DSK surface radius for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceRadiusEnd6</name>
+          <field_number>142</field_number>
+          <field_location unit="byte">1305</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Ending DSK surface radius for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PointX7</name>
+          <field_number>143</field_number>
+          <field_location unit="byte">1314</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <description>Relative X position of point w.r.t. bin or slit, where -1 to 1 define edges</description>
+        </Field_Character>
+        <Field_Character>
+          <name>PointY7</name>
+          <field_number>144</field_number>
+          <field_location unit="byte">1323</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <description>Relative Y position of point w.r.t. bin or slit, where -1 to 1 define edges</description>
+        </Field_Character>
+        <Field_Character>
+          <name>LonStart7</name>
+          <field_number>145</field_number>
+          <field_location unit="byte">1332</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting surface longitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LonEnd7</name>
+          <field_number>146</field_number>
+          <field_location unit="byte">1341</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending surface longitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LatStart7</name>
+          <field_number>147</field_number>
+          <field_location unit="byte">1350</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting surface latitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LatEnd7</name>
+          <field_number>148</field_number>
+          <field_location unit="byte">1359</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending surface latitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LSTStart7</name>
+          <field_number>149</field_number>
+          <field_location unit="byte">1368</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>hours</unit>
+          <description>Starting local solar time of surface point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LSTEnd7</name>
+          <field_number>150</field_number>
+          <field_location unit="byte">1377</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>hours</unit>
+          <description>Ending local solar time of surface point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>IncidenceAngleStart7</name>
+          <field_number>151</field_number>
+          <field_location unit="byte">1386</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting incidence angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>IncidenceAngleEnd7</name>
+          <field_number>152</field_number>
+          <field_location unit="byte">1395</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending incidence angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>EmissionAngleStart7</name>
+          <field_number>153</field_number>
+          <field_location unit="byte">1404</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting emission angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>EmissionAngleEnd7</name>
+          <field_number>154</field_number>
+          <field_location unit="byte">1413</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending emission angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PhaseAngleStart7</name>
+          <field_number>155</field_number>
+          <field_location unit="byte">1422</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting phase angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PhaseAngleEnd7</name>
+          <field_number>156</field_number>
+          <field_location unit="byte">1431</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending phase angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceAltAreoidStart7</name>
+          <field_number>157</field_number>
+          <field_location unit="byte">1440</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Starting height of the DSK surface above the areoid for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceAltAreoidEnd7</name>
+          <field_number>158</field_number>
+          <field_location unit="byte">1449</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Ending height of the DSK surface above the areoid for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceRadiusStart7</name>
+          <field_number>159</field_number>
+          <field_location unit="byte">1458</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Starting DSK surface radius for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceRadiusEnd7</name>
+          <field_number>160</field_number>
+          <field_location unit="byte">1467</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Ending DSK surface radius for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PointX8</name>
+          <field_number>161</field_number>
+          <field_location unit="byte">1476</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <description>Relative X position of point w.r.t. bin or slit, where -1 to 1 define edges</description>
+        </Field_Character>
+        <Field_Character>
+          <name>PointY8</name>
+          <field_number>162</field_number>
+          <field_location unit="byte">1485</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <description>Relative Y position of point w.r.t. bin or slit, where -1 to 1 define edges</description>
+        </Field_Character>
+        <Field_Character>
+          <name>LonStart8</name>
+          <field_number>163</field_number>
+          <field_location unit="byte">1494</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting surface longitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LonEnd8</name>
+          <field_number>164</field_number>
+          <field_location unit="byte">1503</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending surface longitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LatStart8</name>
+          <field_number>165</field_number>
+          <field_location unit="byte">1512</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting surface latitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LatEnd8</name>
+          <field_number>166</field_number>
+          <field_location unit="byte">1521</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending surface latitude (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LSTStart8</name>
+          <field_number>167</field_number>
+          <field_location unit="byte">1530</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>hours</unit>
+          <description>Starting local solar time of surface point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>LSTEnd8</name>
+          <field_number>168</field_number>
+          <field_location unit="byte">1539</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>hours</unit>
+          <description>Ending local solar time of surface point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>IncidenceAngleStart8</name>
+          <field_number>169</field_number>
+          <field_location unit="byte">1548</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting incidence angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>IncidenceAngleEnd8</name>
+          <field_number>170</field_number>
+          <field_location unit="byte">1557</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending incidence angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>EmissionAngleStart8</name>
+          <field_number>171</field_number>
+          <field_location unit="byte">1566</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting emission angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>EmissionAngleEnd8</name>
+          <field_number>172</field_number>
+          <field_location unit="byte">1575</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending emission angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PhaseAngleStart8</name>
+          <field_number>173</field_number>
+          <field_location unit="byte">1584</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Starting phase angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PhaseAngleEnd8</name>
+          <field_number>174</field_number>
+          <field_location unit="byte">1593</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>deg</unit>
+          <description>Ending phase angle for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceAltAreoidStart8</name>
+          <field_number>175</field_number>
+          <field_location unit="byte">1602</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Starting height of the DSK surface above the areoid for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceAltAreoidEnd8</name>
+          <field_number>176</field_number>
+          <field_location unit="byte">1611</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Ending height of the DSK surface above the areoid for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceRadiusStart8</name>
+          <field_number>177</field_number>
+          <field_location unit="byte">1620</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Starting DSK surface radius for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SurfaceRadiusEnd8</name>
+          <field_number>178</field_number>
+          <field_location unit="byte">1629</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <unit>kilometres</unit>
+          <description>Ending DSK surface radius for this point (-999 = invalid value)</description>
+          <Special_Constants>
+            <error_constant>-999.0</error_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Group_Field_Character>
+          <name>Wavelength</name>
+          <group_number>1</group_number>
+          <repetitions>256</repetitions>
+          <fields>1</fields>
+          <groups>0</groups>
+          <group_location unit="byte">1638</group_location>
+          <group_length unit="byte">2048</group_length>
+          <Field_Character>
+            <name>Pixel wavelength</name>
+            <field_location unit="byte">1</field_location>
+            <data_type>ASCII_Real</data_type>
+            <field_length unit="byte">8</field_length>
+            <unit>nanometres</unit>
+            <description>Wavelength at the centre of the pixel</description>
+          </Field_Character>
+        </Group_Field_Character>
+        <Group_Field_Character>
+          <name>Radiance</name>
+          <group_number>2</group_number>
+          <repetitions>256</repetitions>
+          <fields>1</fields>
+          <groups>0</groups>
+          <group_location unit="byte">3686</group_location>
+          <group_length unit="byte">3328</group_length>
+          <Field_Character>
+            <name>Pixel radiance</name>
+            <field_location unit="byte">1</field_location>
+            <data_type>ASCII_Real</data_type>
+            <field_length unit="byte">13</field_length>
+            <description>Pixel radiance</description>
+          </Field_Character>
+        </Group_Field_Character>
+        <Group_Field_Character>
+          <name>Radiance error</name>
+          <group_number>3</group_number>
+          <repetitions>256</repetitions>
+          <fields>1</fields>
+          <groups>0</groups>
+          <group_location unit="byte">7014</group_location>
+          <group_length unit="byte">3328</group_length>
+          <Field_Character>
+            <name>Pixel radiance error</name>
+            <field_location unit="byte">1</field_location>
+            <data_type>ASCII_Real</data_type>
+            <field_length unit="byte">13</field_length>
+            <description>Pixel radiance error</description>
+          </Field_Character>
+        </Group_Field_Character>
+        <Group_Field_Character>
+          <name>Mask</name>
+          <group_number>4</group_number>
+          <repetitions>256</repetitions>
+          <fields>1</fields>
+          <groups>0</groups>
+          <group_location unit="byte">10342</group_location>
+          <group_length unit="byte">512</group_length>
+          <Field_Character>
+            <name>Pixel mask</name>
+            <field_location unit="byte">1</field_location>
+            <data_type>ASCII_Boolean</data_type>
+            <field_length unit="byte">2</field_length>
+            <description>Mask on pixel (0 = OK, 1 = pixel to be rejected)</description>
+          </Field_Character>
+        </Group_Field_Character>
+      </Record_Character>
+    </Table_Character>
+  </File_Area_Observational>
+</Product_Observational>

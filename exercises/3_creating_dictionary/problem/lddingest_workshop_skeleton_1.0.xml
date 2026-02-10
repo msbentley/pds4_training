@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1M00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Ingest_LDD xmlns="http://pds.nasa.gov/pds4/pds/v1"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+			xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1M00.xsd">
+
+	<name>ExoMars RFM RAMAN Laser Spectrometer LDD</name>
+	<ldd_version_id>1.0.0.0</ldd_version_id>
+	<dictionary_type>Mission</dictionary_type>
+	<full_name>Your Name</full_name>
+	<steward_id>psa</steward_id>
+	<namespace_id>emrsp_rm_rls</namespace_id>
+	<comment>
+		The ExoMars RSP RAMAN Laser Spectrometer local data dictionary contains classes and/or attributes
+		that describe mission specific information about the ExoMars RSP RLS payload.
+	</comment>
+	<last_modification_date_time>2024-11-07T10:00:00.002Z</last_modification_date_time>
+
+    <!-- ======================================================================================================= -->
+	<!-- Attributes definition -->
+	<!-- New attributes each as a DD_Attribute need to be defined for each item in the list in the associated document i.e.
+		number_of_samples
+		sampling_frequency
+		instrument_status_type
+		beginning_of_test_timestamp
+		step_mode
+		autofocus_range
+		autofocus_position_tolerance
+		preamplifier_gain
+		number_of_points_on_curve
+		focus_position_calculated
+		laser_channel
+		end_of_test_trigger
+		end_of_test_timestamp
+		snr
+		enabling_algorithm_mask
+     -->
+	<!-- Help on filling out attributes can be found at 
+		 https://sbnwiki.asteroiddata.org/Filling_Out_the_DD_Attribute_Class.html -->
+	<!-- General help on filling out attributes can be found at 
+		 https://sbnwiki.asteroiddata.org/Creating_the_Ingest_LDD_Dictionary_Input_File.html -->
+			
+	
+	<DD_Attribute>
+		<name>instrument_status_type</name>
+		<version_id>1.0</version_id>
+		<local_identifier>emrsp_rm_rls.instrument_status_type</local_identifier>
+		<nillable_flag>false</nillable_flag>
+		<submitter_name>Andrea D'Ottavio</submitter_name>
+		<definition>
+			The first 4 bits (MSB ones) determine the Current SW mode as follows:
+			1 -> StandBy; 2-> Ready; 4 -> Safe. The next 4 bits (LSB ones) determine the test ID.
+		</definition>
+		<DD_Value_Domain>
+			<enumeration_flag>true</enumeration_flag>
+			<value_data_type>ASCII_NonNegative_Integer</value_data_type>
+			<DD_Permissible_Value>
+				<value>1</value>
+				<value_meaning>
+					StandBy
+				</value_meaning>
+			</DD_Permissible_Value>
+			<DD_Permissible_Value>
+				<value>2</value>
+				<value_meaning>
+					Ready
+				</value_meaning>
+			</DD_Permissible_Value>
+			<DD_Permissible_Value>
+				<value>4</value>
+				<value_meaning>
+					Safe
+				</value_meaning>
+			</DD_Permissible_Value>
+		</DD_Value_Domain>
+	</DD_Attribute>
+	
+	<DD_Attribute>
+		<name>criticality</name>
+		<version_id>1.0</version_id>
+		<local_identifier>emrsp_rm_rls.criticality</local_identifier>
+		<nillable_flag>false</nillable_flag>
+		<submitter_name>Andrea D'Ottavio</submitter_name>
+		<definition>
+			Critical levels of the Science TM packets.
+		</definition>
+		<DD_Value_Domain>
+			<enumeration_flag>true</enumeration_flag>
+			<value_data_type>ASCII_NonNegative_Integer</value_data_type>
+			<DD_Permissible_Value>
+				<value>03</value>
+				<value_meaning>
+					Science Critical.
+					Science packets with the highest download priority.
+				</value_meaning>
+			</DD_Permissible_Value>
+			<DD_Permissible_Value>
+				<value>02</value>
+				<value_meaning>
+					Science Non-Critical.
+					Science packets with the lowest download priority.
+				</value_meaning>
+			</DD_Permissible_Value>
+		</DD_Value_Domain>
+	</DD_Attribute>
+	
+	<!-- Here is an example value domain where just min and max are required
+	<DD_Value_Domain>
+		<enumeration_flag>false</enumeration_flag>
+		<value_data_type>ASCII_NonNegative_Integer</value_data_type>
+		<minimum_value>0</minimum_value>
+		<maximum_value>65535</maximum_value>
+	</DD_Value_Domain>
+	-->
+	
+	<!-- This is a shortcut to Units Of Measure on the SBN Wiki
+	https://sbnwiki.asteroiddata.org/Filling_Out_the_DD_Attribute_Class.html#.3Cunit_of_measure_type.3E
+	-->
+	
+    <!-- ============================================================================================ -->
+	<!-- Class definitions -->
+	
+	
+	<DD_Class>
+		<name>Instrument_Status</name>
+		<version_id>1.0</version_id>
+		<local_identifier>emrsp_rm_rls.Instrument_Status</local_identifier>
+		<submitter_name>Andrea D'Ottavio</submitter_name>
+		<definition>
+			This class collects all those ancillary parameters necessary to further describe and characterize the
+			science data products generated and related to the status of the instrument.
+		</definition>
+		<element_flag>true</element_flag>
+		<DD_Association>
+			<identifier_reference>emrsp_rm_rls.instrument_status_type</identifier_reference>
+			<reference_type>attribute_of</reference_type>
+			<minimum_occurrences>1</minimum_occurrences>
+			<maximum_occurrences>1</maximum_occurrences>
+		</DD_Association>
+		<!-- Asssociations need to be added here for:
+			number_of_samples
+			sampling_frequency
+			instrument_status_type
+			beginning_of_test_timestamp
+			-->
+		<DD_Association>
+			<identifier_reference>emrsp_rm_rls.criticality</identifier_reference>
+			<reference_type>attribute_of</reference_type>
+			<minimum_occurrences>1</minimum_occurrences>
+			<maximum_occurrences>1</maximum_occurrences>
+		</DD_Association>
+
+			
+	</DD_Class>
+	
+	<DD_Class>
+		<name>Autofocus_Data</name>
+		<version_id>1.0</version_id>
+		<local_identifier>emrsp_rm_rls.Autofocus_Data</local_identifier>
+		<submitter_name>Andrea D'Ottavio</submitter_name>
+		<definition>
+			This class collects all those ancillary parameters necessary to further describe and characterize the
+			science data products generated and related to the AUTOFOCUS settings.
+		</definition>
+		<element_flag>true</element_flag>
+		<!-- Asssociations need to be added here for:
+			step_mode
+			autofocus_range
+			autofocus_position_tolerance
+			preamplifier_gain
+			number_of_points_on_curve
+			focus_position_calculated
+			laser_channel
+			end_of_test_trigger
+			end_of_test_timestamp
+			snr
+			enabling_algorithm_mask
+			-->
+		<DD_Association>
+			<identifier_reference>emrsp_rm_rls.criticality</identifier_reference>
+			<reference_type>attribute_of</reference_type>
+			<minimum_occurrences>1</minimum_occurrences>
+			<maximum_occurrences>1</maximum_occurrences>
+			<!-- not used in this excercise:
+				<maximum_occurrences>unbounded</maximum_occurrences> is used if you don't want to set a limit -->
+		</DD_Association>
+	</DD_Class>
+</Ingest_LDD>

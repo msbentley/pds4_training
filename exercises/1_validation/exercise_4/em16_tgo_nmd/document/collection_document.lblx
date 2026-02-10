@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1M00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?><Product_Collection xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1M00.xsd">
+
+    <Identification_Area>
+        <logical_identifier>urn:esa:psa:em16_tgo_nmd:document</logical_identifier>
+        <version_id>105.2</version_id>
+        <title>ExoMars 2016 Mission NOMAD Document Collection</title>
+        <information_model_version>1.22.0.0</information_model_version>
+        <product_class>Product_Collection</product_class>
+        <Citation_Information>
+            <publication_year>2006</publication_year>
+            <description>This is the description</description>
+            <List_Author>
+                <Person>
+                    <given_name>An</given_name>
+                    <family_name>Author</family_name>
+                </Person>
+            </List_Author>
+        </Citation_Information>
+        
+        <Modification_History>
+        	<Modification_Detail>
+        		<modification_date>2024-05-27</modification_date>
+        		<version_id>105.2</version_id>
+        		<description>Master collection file created by the PSA PDS4 Delivery Packager</description>
+        	</Modification_Detail>
+        	<Modification_Detail>
+        		<modification_date>2020-06-10</modification_date>
+        		<version_id>2.0</version_id>
+        		<description>Updated to IM 1.21, most PDF/A issues fixed, RD-06 and RD-11 still not compliant after Adobe Pro used!</description>
+        	</Modification_Detail>
+        	<Modification_Detail>
+        		<modification_date>2020-06-10</modification_date>
+        		<version_id>1.5</version_id>
+        		<description>Added Issue 2 Rev 1 of the EAICD following the first science review</description>
+        	</Modification_Detail>
+        	<Modification_Detail>
+        		<modification_date>2020-03-09</modification_date>
+        		<version_id>1.4</version_id>
+        		<description>Added Issue 1 Rev 14 of EAICD</description>
+        	</Modification_Detail>
+        	<Modification_Detail>
+        		<modification_date>2019-09-03</modification_date>
+        		<version_id>1.3</version_id>
+        		<description>Added first version of EAICD anf reference documents</description>
+        	</Modification_Detail>
+        	<Modification_Detail>
+        		<modification_date>2018-11-23</modification_date>
+        		<version_id>1.2</version_id>
+        		<description>Update to version 1.11 of the information model, updated fields to 2</description>
+        	</Modification_Detail>
+        	<Modification_Detail>
+        		<modification_date>2017-06-12</modification_date>
+        		<version_id>1.1</version_id>
+        		<description>Update to version 1.8 of the information model</description>
+        	</Modification_Detail>
+        	<Modification_Detail>
+        		<modification_date>2015-05-27</modification_date>
+        		<version_id>1.0</version_id>
+        		<description>This is the first version of this product</description>
+        	</Modification_Detail>
+        	<Modification_Detail>
+        		<modification_date>2020-06-10</modification_date>
+        		<version_id>2.0</version_id>
+        		<description>Added Issue 2 Rev 2 of the EAICD following delivery from NOMAD team, updated to IM 1.15</description>
+        	</Modification_Detail>
+        </Modification_History>
+
+    </Identification_Area>
+
+    <Collection>
+        <collection_type>Document</collection_type>
+    </Collection>
+
+    <File_Area_Inventory>
+        <File>
+            <file_name>collection_document.csv</file_name>
+        </File>
+        <Inventory>
+            <offset unit="byte">0</offset>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <records>12</records>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <field_delimiter>Comma</field_delimiter>
+            <Record_Delimited>
+                <fields>2</fields>
+                <groups>0</groups>
+                <maximum_record_length unit="byte">121</maximum_record_length>
+                <Field_Delimited>
+                    <name>Member Status</name>
+                    <field_number>1</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <maximum_field_length unit="byte">1</maximum_field_length>
+                    <description>This column specifies the status type of the files that comprise the collection.</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>LIDVID_LID</name>
+                    <field_number>2</field_number>
+                    <data_type>ASCII_LIDVID_LID</data_type>
+                    <maximum_field_length unit="byte">255</maximum_field_length>
+                    <description>This column specifies the LID of the files that comprise the collection.</description>
+                </Field_Delimited>
+            </Record_Delimited>
+            <reference_type>inventory_has_member_product</reference_type>
+        </Inventory>
+    </File_Area_Inventory>
+</Product_Collection>

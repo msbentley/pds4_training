@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- PDS4 XML product label for PDS4 V1.15.0.0  Fri Jan 22 14:02:05 CET 2021 --><!-- Generated from the PDS4 Information Model V1.15.0.0 - System Build 11a --><!-- *** This PDS4 XML product label is an operational deliverable. *** -->
+ <?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1M00.sch"  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+ <Product_Collection xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1M00.xsd">
+
+	<Identification_Area>
+		<logical_identifier>urn:esa:psa:em16_tgo_nmd:data_raw</logical_identifier>
+		<version_id>109.2</version_id>
+		<title>ExoMars 2016 NOMAD Raw-level Data Product Collection</title>
+		<information_model_version>1.22.0.0</information_model_version>
+		<product_class>Product_Collection</product_class>
+        <Citation_Information>
+            <publication_year>2006</publication_year>
+            <description>This is the NOMAD browse collection</description>
+            <List_Author>
+                <Person>
+                    <given_name>An</given_name>
+                    <family_name>Author</family_name>
+                </Person>
+            </List_Author>
+        </Citation_Information>
+		<Modification_History>
+			<Modification_Detail>
+				<modification_date>2024-10-22</modification_date>
+				<version_id>109.2</version_id>
+				<description>Collection file automatically created by the PSA PDS4 Delivery Packager</description>
+			</Modification_Detail>
+		</Modification_History>
+
+	</Identification_Area>
+	
+	<Context_Area>
+		<Time_Coordinates>
+			<start_date_time>2016-03-05T00:00:00Z</start_date_time>
+			<stop_date_time>2030-12-31T23:59:59Z</stop_date_time>
+		</Time_Coordinates>
+		<Primary_Result_Summary>
+			<purpose>Science</purpose>
+			<processing_level>Raw</processing_level>
+			<description>Raw Science Collection</description>
+			<Science_Facets>
+				<wavelength_range>Infrared</wavelength_range>
+				<wavelength_range>Ultraviolet</wavelength_range>
+				<domain>Atmosphere</domain>
+				<discipline_name>Spectroscopy</discipline_name>
+			</Science_Facets>
+		</Primary_Result_Summary>
+		
+		<!-- Mission -->
+		<Investigation_Area>
+			<name>ExoMars16</name>
+			<type>Mission</type>
+			<Internal_Reference>
+				<lid_reference>urn:esa:psa:context:investigation:mission.em16</lid_reference>
+				<reference_type>collection_to_investigation</reference_type>
+			</Internal_Reference>
+		</Investigation_Area>
+		
+		<Observing_System>
+			<name>ExoMars2016 NOMAD</name>
+			
+			<!-- Instrument Host -->
+			<Observing_System_Component>
+				<name>TGO</name>
+				<type>Host</type>
+				<Internal_Reference>
+					<lid_reference>urn:esa:psa:context:instrument_host:spacecraft.tgo</lid_reference>
+					<reference_type>is_instrument_host</reference_type>
+				</Internal_Reference>
+			</Observing_System_Component>
+			
+			<!-- Instrument -->
+			<Observing_System_Component>
+				<name>NOMAD</name>
+				<type>Instrument</type>
+				<description>Instrument NOMAD</description>
+				<Internal_Reference>
+					<lid_reference>urn:esa:psa:context:instrument:tgo.nomad</lid_reference>
+					<reference_type>is_instrument</reference_type>
+				</Internal_Reference>
+			</Observing_System_Component>
+			
+		</Observing_System>
+		
+		<Target_Identification>
+			<name>MARS</name>
+			<type>Planet</type>
+			<description>Planet Mars</description>
+			<Internal_Reference>
+				<lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+				<reference_type>data_to_target</reference_type>
+			</Internal_Reference>
+		</Target_Identification>
+		
+	</Context_Area>
+	
+
+	<Collection>
+		<collection_type>Data</collection_type>
+		<description>
+			NOMAD
+			=====
+			
+			NOMAD is is a 3-channel spectrometer designed to perform high-sensitivity orbital identification of atmospheric components, 
+			concentration and temperature, their sources, loss, and cycles. It measures the sunlight reflected from the surface and 
+			atmosphere of Mars, and it analyses its wavelength spectrum to identify the components of the Martian atmosphere 
+			that may suggest a biological source.
+			
+			This spectrometer consists of three channels: solar occultation (SO), limb nadir and occultation (LNO), and ultraviolet 
+			and visible spectrometer (UVIS). The first two channels work in the infrared (2.2 to 4.3 μm); the third 
+			channel (UVIS) works in the UV-visible range (0.2 to 0.65 μm), which is able to measure ozone, sulphuric acid, and perform 
+			aerosol studies. Measurements are carried out during solar occultation, i.e. the instrument points toward the sunset 
+			as the orbiter moves toward or away the dark side of Mars. It also measures in nadir mode, i.e. looking directly at the 
+			sunlight reflected from the surface and atmosphere of Mars.
+			
+			The Principal Investigator is Ann Carine Vandaele, from the Belgian Institute for Space Aeronomy.
+			
+			The Raw_Data Collection
+			=======================
+			
+			The raw data collection contains the raw science and housekeeping data from the instrument and the data is released 
+			publicly on a daily basis with a six month lag from the data being obtained. 
+			
+			(Note LNO data is not yet publically available so can not be downloaded from any time period)
+			
+			Physically the collection is organised by science phase, then orbit range in groups of 100 orbits, then orbit. Different 
+			data types e.g. HK plus science from different channels may be mixed in this time related directory.
+			
+			A description of the raw data products can be found in the NOMAD Experiment to Archive ICD (EAICD). This can be found 
+			under documents in the user interface or via the Document Collection in the PSA ftp disctribution. A quick start guide
+			can also be found at: https://issues.cosmos.esa.int/socciwiki/display/PSAPUB1/NOMAD+Quick+Start+Guide
+		</description>
+	</Collection>
+
+	<File_Area_Inventory>
+		<File>
+			<file_name>collection_data_raw.csv</file_name>
+			<records>1</records>
+		</File>
+		<Inventory>
+			<offset unit="byte">0</offset>
+			<parsing_standard_id>PDS DSV 1</parsing_standard_id>
+			<records>1</records>
+			<record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+			<field_delimiter>Comma</field_delimiter>
+
+			<Record_Delimited>
+				<fields>2</fields>
+				<groups>0</groups>
+				<maximum_record_length unit="byte">259</maximum_record_length>
+
+				<Field_Delimited>
+					<name>Member Status</name>
+					<field_number>1</field_number>
+					<data_type>ASCII_String</data_type>
+					<maximum_field_length unit="byte">1</maximum_field_length>
+					<description>
+						This columns specifies the status type of the files that
+						comprise the collection.
+					</description>
+				</Field_Delimited>
+				<Field_Delimited>
+					<name>LIDVID_LID</name>
+					<field_number>2</field_number>
+					<data_type>ASCII_LIDVID_LID</data_type>
+					<maximum_field_length unit="byte">255</maximum_field_length>
+					<description>
+						This columns specifies the LIDVID of the files that
+						comprise the collection.
+					</description>
+				</Field_Delimited>
+			</Record_Delimited>
+
+			<reference_type>inventory_has_member_product</reference_type>
+
+		</Inventory>
+	</File_Area_Inventory>
+</Product_Collection>
