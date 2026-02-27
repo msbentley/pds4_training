@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1L00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Ingest_LDD xmlns="http://pds.nasa.gov/pds4/pds/v1"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+			xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1L00.xsd">
+
+	<name>ExoMars RFM RAMAN Laser Spectrometer LDD</name>
+	<ldd_version_id>1.0.0.0</ldd_version_id>
+	<dictionary_type>Mission</dictionary_type>
+	<full_name>Andrea D'Ottavio</full_name>
+	<steward_id>psa</steward_id>
+	<namespace_id>emrsp_rm_rls</namespace_id>
+	<comment>
+		The ExoMars RSP RAMAN Laser Spectrometer local data dictionary contains classes and/or attributes
+		that describe mission specific information about the ExoMars RSP RLS payload.
+	</comment>
+	<last_modification_date_time>2020-01-31T10:11:46.802Z</last_modification_date_time>
+
+    <!-- ======================================================================================================= -->
+	<!-- Attributes definition -->
+	
+	<DD_Attribute>
+		<name>instrument_status_type</name>
+		<version_id>1.0</version_id>
+		<local_identifier>emrsp_rm_rls.instrument_status_type</local_identifier>
+		<nillable_flag>false</nillable_flag>
+		<submitter_name>Andrea D'Ottavio</submitter_name>
+		<definition>
+			The first 4 bits (MSB ones) determine the Current SW mode as follows:
+			1 -> StandBy; 2-> Ready; 4 -> Safe. The next 4 bits (LSB ones) determine the test ID.
+		</definition>
+		<DD_Value_Domain>
+			<enumeration_flag>true</enumeration_flag>
+			<value_data_type>ASCII_NonNegative_Integer</value_data_type>
+			<DD_Permissible_Value>
+				<value>1</value>
+				<value_meaning>
+					StandBy
+				</value_meaning>
+			</DD_Permissible_Value>
+			<DD_Permissible_Value>
+				<value>2</value>
+				<value_meaning>
+					Ready
+				</value_meaning>
+			</DD_Permissible_Value>
+			<DD_Permissible_Value>
+				<value>4</value>
+				<value_meaning>
+					Safe
+				</value_meaning>
+			</DD_Permissible_Value>
+		</DD_Value_Domain>
+	</DD_Attribute>
+	
+	<DD_Attribute>
+		<name>beginning_of_test_timestamp</name>
+		<version_id>1.0</version_id>
+		<local_identifier>emrsp_rm_rls.beginning_of_test_timestamp</local_identifier>
+		<nillable_flag>false</nillable_flag>
+		<submitter_name>Andrea D'Ottavio</submitter_name>
+		<definition>
+			Timestamp at the beginning of the test (since the last power on of RAMAN).
+		</definition>
+		<DD_Value_Domain>
+			<enumeration_flag>false</enumeration_flag>
+			<value_data_type>ASCII_NonNegative_Integer</value_data_type>
+			<minimum_value>0</minimum_value>
+			<maximum_value>65535</maximum_value>
+		</DD_Value_Domain>
+	</DD_Attribute>
+	
+	<DD_Attribute>
+		<name>snr</name>
+		<version_id>1.0</version_id>
+		<local_identifier>emrsp_rm_rls.snr</local_identifier>
+		<nillable_flag>false</nillable_flag>
+		<submitter_name>Andrea D'Ottavio</submitter_name>
+		<definition>
+			Onboard calculated SNR value of the reference frame acquired with Final Ti.
+		</definition>
+		<DD_Value_Domain>
+			<enumeration_flag>false</enumeration_flag>
+			<value_data_type>ASCII_NonNegative_Integer</value_data_type>
+			<minimum_value>0</minimum_value>
+			<maximum_value>4095</maximum_value>
+		</DD_Value_Domain>
+	</DD_Attribute>
+	
+	<DD_Attribute>
+		<name>enabling_algorithm_mask</name>
+		<version_id>1.0</version_id>
+		<local_identifier>emrsp_rm_rls.enabling_algorithm_mask</local_identifier>
+		<nillable_flag>false</nillable_flag>
+		<submitter_name>Andrea D'Ottavio</submitter_name>
+		<definition>
+			Mask indicating which acquisition parameter calculation algorithms will be executed.
+		</definition>
+		<DD_Value_Domain>
+			<enumeration_flag>false</enumeration_flag>
+			<value_data_type>ASCII_NonNegative_Integer</value_data_type>
+			<minimum_value>0</minimum_value>
+			<maximum_value>12167928680721</maximum_value>
+		</DD_Value_Domain>
+	</DD_Attribute>
+	
+	<DD_Attribute>
+		<name>number_of_samples</name>
+		<version_id>1.0</version_id>
+		<local_identifier>emrsp_rm_rls.number_of_samples</local_identifier>
+		<nillable_flag>false</nillable_flag>
+		<submitter_name>Andrea D'Ottavio</submitter_name>
+		<definition>
+			Number of samples to be measured in the test.
+		</definition>
+		<DD_Value_Domain>
+			<enumeration_flag>false</enumeration_flag>
+			<value_data_type>ASCII_NonNegative_Integer</value_data_type>
+			<minimum_value>0</minimum_value>
+			<maximum_value>65535</maximum_value>
+		</DD_Value_Domain>
+	</DD_Attribute>
+	
+	<DD_Attribute>
+		<name>sampling_frequency</name>
+		<version_id>1.0</version_id>
+		<local_identifier>emrsp_rm_rls.sampling_frequency</local_identifier>
+		<nillable_flag>false</nillable_flag>
+		<submitter_name>Andrea D'Ottavio</submitter_name>
+		<definition>
+			Sampling frequency for the commanded test.
+		</definition>
+		<DD_Value_Domain>
+			<enumeration_flag>false</enumeration_flag>
+			<value_data_type>ASCII_NonNegative_Integer</value_data_type>
+			<minimum_value>0</minimum_value>
+			<maximum_value>65535</maximum_value>
+		</DD_Value_Domain>
+	</DD_Attribute>
+	
+	<DD_Attribute>
+		<name>end_of_test_trigger</name>
+		<version_id>1.0</version_id>
+		<local_identifier>emrsp_rm_rls.end_of_test_trigger</local_identifier>
+		<nillable_flag>false</nillable_flag>
+		<submitter_name>Andrea D'Ottavio</submitter_name>
+		<definition>
+			Event that triggered the end of the test.
+			Values:§
+			- 0x00 if range is covered
+			- 0x01 if Test timed out.
+		</definition>
+		<DD_Value_Domain>
+			<enumeration_flag>true</enumeration_flag>
+			<value_data_type>ASCII_NonNegative_Integer</value_data_type>
+			<DD_Permissible_Value>
+				<value>0</value>
+				<value_meaning>
+					Range Covered
+				</value_meaning>
+			</DD_Permissible_Value>
+			<DD_Permissible_Value>
+				<value>1</value>
+				<value_meaning>
+					Test time-out
+				</value_meaning>
+			</DD_Permissible_Value>
+		</DD_Value_Domain>
+	</DD_Attribute>
+	
+	<DD_Attribute>
+		<name>end_of_test_timestamp</name>
+		<version_id>1.0</version_id>
+		<local_identifier>emrsp_rm_rls.end_of_test_timestamp</local_identifier>
+		<nillable_flag>false</nillable_flag>
+		<submitter_name>Andrea D'Ottavio</submitter_name>
+		<definition>
+			Timestamp at the end of the test (since the last power on of RAMAN).
+		</definition>
+		<DD_Value_Domain>
+			<enumeration_flag>false</enumeration_flag>
+			<value_data_type>ASCII_NonNegative_Integer</value_data_type>
+			<minimum_value>0</minimum_value>
+			<maximum_value>65535</maximum_value>
+		</DD_Value_Domain>
+	</DD_Attribute>
+	
+	<DD_Attribute>
+		<name>laser_channel</name>
+		<version_id>1.0</version_id>
+		<local_identifier>emrsp_rm_rls.laser_channel</local_identifier>
+		<nillable_flag>false</nillable_flag>
+		<submitter_name>Andrea D'Ottavio</submitter_name>
+		<definition>
+			Laser channel switch on (From System Parameter). Values:
+			- 01 Nominal Laser
+			- 02 Redundant Laser.
+		</definition>
+		<DD_Value_Domain>
+			<enumeration_flag>true</enumeration_flag>
+			<value_data_type>ASCII_NonNegative_Integer</value_data_type>
+			<DD_Permissible_Value>
+				<value>1</value>
+				<value_meaning>
+					Nominal Laser.
+				</value_meaning>
+			</DD_Permissible_Value>
+			<DD_Permissible_Value>
+				<value>2</value>
+				<value_meaning>
+					Redundant Laser.
+				</value_meaning>
+			</DD_Permissible_Value>
+		</DD_Value_Domain>
+	</DD_Attribute>
+	
+	<DD_Attribute>
+		<name>step_mode</name>
+		<version_id>1.0</version_id>
+		<local_identifier>emrsp_rm_rls.step_mode</local_identifier>
+		<nillable_flag>false</nillable_flag>
+		<submitter_name>Andrea D'Ottavio</submitter_name>
+		<definition>
+			Step Mode controls how a stepper motor operates, there are three commonly used excitation modes for stepper
+			motors, full step, quarter step and microstepping.
+			These excitation modes have an effect on both the running properties and torque the motor delivers.
+			- 0 = FullStep
+			- 1 = QuarterStep
+			- 2 = MicroStep.
+		</definition>
+		<DD_Value_Domain>
+			<enumeration_flag>true</enumeration_flag>
+			<value_data_type>ASCII_NonNegative_Integer</value_data_type>
+			<DD_Permissible_Value>
+				<value>0</value>
+				<value_meaning>
+					FullStep.
+				</value_meaning>
+			</DD_Permissible_Value>
+			<DD_Permissible_Value>
+				<value>1</value>
+				<value_meaning>
+					QuarterStep.
+				</value_meaning>
+			</DD_Permissible_Value>
+			<DD_Permissible_Value>
+				<value>2</value>
+				<value_meaning>
+					MicroStep.
+				</value_meaning>
+			</DD_Permissible_Value>
+		</DD_Value_Domain>
+	</DD_Attribute>
+	
+	<DD_Attribute>
+		<name>autofocus_range</name>
+		<version_id>1.0</version_id>
+		<local_identifier>emrsp_rm_rls.autofocus_range</local_identifier>
+		<nillable_flag>false</nillable_flag>
+		<submitter_name>Andrea D'Ottavio</submitter_name>
+		<definition>
+			Encoder range of the Autofocus.
+		</definition>
+		<DD_Value_Domain>
+			<enumeration_flag>false</enumeration_flag>
+			<value_data_type>ASCII_Integer</value_data_type>
+			<minimum_value>0</minimum_value>
+			<maximum_value>65535</maximum_value>
+		</DD_Value_Domain>
+	</DD_Attribute>
+	
+	<DD_Attribute>
+		<name>autofocus_position_tolerance</name>
+		<version_id>1.0</version_id>
+		<local_identifier>emrsp_rm_rls.autofocus_position_tolerance</local_identifier>
+		<nillable_flag>false</nillable_flag>
+		<submitter_name>Andrea D'Ottavio</submitter_name>
+		<definition>
+			Tolerance of the Autofocus position during Autofocus operation.
+		</definition>
+		<DD_Value_Domain>
+			<enumeration_flag>false</enumeration_flag>
+			<value_data_type>ASCII_Integer</value_data_type>
+			<minimum_value>0</minimum_value>
+			<maximum_value>65535</maximum_value>
+		</DD_Value_Domain>
+	</DD_Attribute>
+	
+	<DD_Attribute>
+		<name>preamplifier_gain</name>
+		<version_id>1.0</version_id>
+		<local_identifier>emrsp_rm_rls.preamplifier_gain</local_identifier>
+		<nillable_flag>false</nillable_flag>
+		<submitter_name>Andrea D'Ottavio</submitter_name>
+		<definition>
+			Preamplifier Gain at the end of the Autofocus.
+		</definition>
+		<DD_Value_Domain>
+			<enumeration_flag>true</enumeration_flag>
+			<value_data_type>ASCII_Integer</value_data_type>
+			<DD_Permissible_Value>
+				<value>0</value>
+				<value_meaning>
+					GainBit1=0,GainBit2=0 --> Gain Value 128.
+				</value_meaning>
+			</DD_Permissible_Value>
+			<DD_Permissible_Value>
+				<value>1</value>
+				<value_meaning>
+					GainBit1=0,GainBit2=1 --> Gain Value 32.
+				</value_meaning>
+			</DD_Permissible_Value>
+			<DD_Permissible_Value>
+				<value>2</value>
+				<value_meaning>
+					GainBit1=1,GainBit2=0 --> Gain Value 8.
+				</value_meaning>
+			</DD_Permissible_Value>
+			<DD_Permissible_Value>
+				<value>3</value>
+				<value_meaning>
+					GainBit1=1,GainBit2=1 --> Gain Value 2.
+				</value_meaning>
+			</DD_Permissible_Value>
+		</DD_Value_Domain>
+	</DD_Attribute>
+	
+	<DD_Attribute>
+		<name>number_of_points_on_curve</name>
+		<version_id>1.0</version_id>
+		<local_identifier>emrsp_rm_rls.number_of_points_on_curve</local_identifier>
+		<nillable_flag>false</nillable_flag>
+		<submitter_name>Andrea D'Ottavio</submitter_name>
+		<definition>
+			Number Of Points on Curve.
+		</definition>
+		<DD_Value_Domain>
+			<enumeration_flag>false</enumeration_flag>
+			<value_data_type>ASCII_NonNegative_Integer</value_data_type>
+			<minimum_value>1</minimum_value>
+			<maximum_value>900</maximum_value>
+		</DD_Value_Domain>
+	</DD_Attribute>
+	
+	<DD_Attribute>
+		<name>focus_position_calculated</name>
+		<version_id>1.0</version_id>
+		<local_identifier>emrsp_rm_rls.focus_position_calculated</local_identifier>
+		<nillable_flag>false</nillable_flag>
+		<submitter_name>Andrea D'Ottavio</submitter_name>
+		<definition>
+			Focus position after algorithm.
+		</definition>
+		<DD_Value_Domain>
+			<enumeration_flag>false</enumeration_flag>
+			<value_data_type>ASCII_NonNegative_Integer</value_data_type>
+			<minimum_value>0</minimum_value>
+			<maximum_value>4095</maximum_value>
+		</DD_Value_Domain>
+	</DD_Attribute>
+	
+	<DD_Attribute>
+		<name>criticality</name>
+		<version_id>1.0</version_id>
+		<local_identifier>emrsp_rm_rls.criticality</local_identifier>
+		<nillable_flag>false</nillable_flag>
+		<submitter_name>Andrea D'Ottavio</submitter_name>
+		<definition>
+			Critical levels of the Science TM packets.
+		</definition>
+		<DD_Value_Domain>
+			<enumeration_flag>true</enumeration_flag>
+			<value_data_type>ASCII_NonNegative_Integer</value_data_type>
+			<DD_Permissible_Value>
+				<value>03</value>
+				<value_meaning>
+					Science Critical.
+					Science packets with the highest download priority.
+				</value_meaning>
+			</DD_Permissible_Value>
+			<DD_Permissible_Value>
+				<value>02</value>
+				<value_meaning>
+					Science Non-Critical.
+					Science packets with the lowest download priority.
+				</value_meaning>
+			</DD_Permissible_Value>
+		</DD_Value_Domain>
+	</DD_Attribute>
+	
+	<DD_Attribute>
+		<name>rotation_angle</name>
+		<version_id>1.0</version_id>
+		<local_identifier>emrsp_rm_rls.rotation_angle</local_identifier>
+		<nillable_flag>false</nillable_flag>
+		<submitter_name>Tanya Lim</submitter_name>
+		<definition>rotation angle, not actually an rls attribute</definition>
+		<DD_Value_Domain>
+			<enumeration_flag>false</enumeration_flag>
+			<value_data_type>ASCII_Real</value_data_type>
+			<minimum_value>-180</minimum_value>
+			<maximum_value>180</maximum_value>
+			<unit_of_measure_type>Units_of_Angle</unit_of_measure_type>
+		</DD_Value_Domain>
+	</DD_Attribute>
+	
+    <!-- ============================================================================================ -->
+	<!-- Class definitions -->
+	
+	
+	<DD_Class>
+		<name>Instrument_Status</name>
+		<version_id>1.0</version_id>
+		<local_identifier>emrsp_rm_rls.Instrument_Status</local_identifier>
+		<submitter_name>Andrea D'Ottavio</submitter_name>
+		<definition>
+			This class collects all those ancillary parameters necessary to further describe and characterize the
+			science data products generated and related to the status of the instrument.
+		</definition>
+		<element_flag>true</element_flag>
+		<DD_Association>
+			<identifier_reference>emrsp_rm_rls.number_of_samples</identifier_reference>
+			<reference_type>attribute_of</reference_type>
+			<minimum_occurrences>1</minimum_occurrences>
+			<maximum_occurrences>1</maximum_occurrences>
+		</DD_Association>
+		<DD_Association>
+			<identifier_reference>emrsp_rm_rls.sampling_frequency</identifier_reference>
+			<reference_type>attribute_of</reference_type>
+			<minimum_occurrences>1</minimum_occurrences>
+			<maximum_occurrences>1</maximum_occurrences>
+		</DD_Association>
+		<DD_Association>
+			<identifier_reference>emrsp_rm_rls.instrument_status_type</identifier_reference>
+			<reference_type>attribute_of</reference_type>
+			<minimum_occurrences>1</minimum_occurrences>
+			<maximum_occurrences>1</maximum_occurrences>
+		</DD_Association>
+		<DD_Association>
+			<identifier_reference>emrsp_rm_rls.beginning_of_test_timestamp</identifier_reference>
+			<reference_type>attribute_of</reference_type>
+			<minimum_occurrences>1</minimum_occurrences>
+			<maximum_occurrences>1</maximum_occurrences>
+		</DD_Association>
+		<DD_Association>
+			<identifier_reference>emrsp_rm_rls.rotation_angle</identifier_reference>
+			<reference_type>attribute_of</reference_type>
+			<minimum_occurrences>1</minimum_occurrences>
+			<maximum_occurrences>1</maximum_occurrences>
+		</DD_Association>
+		<DD_Association>
+			<identifier_reference>emrsp_rm_rls.criticality</identifier_reference>
+			<reference_type>attribute_of</reference_type>
+			<minimum_occurrences>1</minimum_occurrences>
+			<maximum_occurrences>1</maximum_occurrences>
+		</DD_Association>
+	</DD_Class>
+	
+	<DD_Class>
+		<name>Autofocus_Data</name>
+		<version_id>1.0</version_id>
+		<local_identifier>emrsp_rm_rls.Autofocus_Data</local_identifier>
+		<submitter_name>Andrea D'Ottavio</submitter_name>
+		<definition>
+			This class collects all those ancillary parameters necessary to further describe and characterize the
+			science data products generated and related to the AUTOFOCUS settings.
+		</definition>
+		<element_flag>true</element_flag>
+		<DD_Association>
+			<identifier_reference>emrsp_rm_rls.step_mode</identifier_reference>
+			<reference_type>attribute_of</reference_type>
+			<minimum_occurrences>1</minimum_occurrences>
+			<maximum_occurrences>1</maximum_occurrences>
+		</DD_Association>
+		<DD_Association>
+			<identifier_reference>emrsp_rm_rls.autofocus_range</identifier_reference>
+			<reference_type>attribute_of</reference_type>
+			<minimum_occurrences>1</minimum_occurrences>
+			<maximum_occurrences>1</maximum_occurrences>
+		</DD_Association>
+		<DD_Association>
+			<identifier_reference>emrsp_rm_rls.autofocus_position_tolerance</identifier_reference>
+			<reference_type>attribute_of</reference_type>
+			<minimum_occurrences>1</minimum_occurrences>
+			<maximum_occurrences>1</maximum_occurrences>
+		</DD_Association>
+		<DD_Association>
+			<identifier_reference>emrsp_rm_rls.preamplifier_gain</identifier_reference>
+			<reference_type>attribute_of</reference_type>
+			<minimum_occurrences>1</minimum_occurrences>
+			<maximum_occurrences>1</maximum_occurrences>
+		</DD_Association>
+		<DD_Association>
+			<identifier_reference>emrsp_rm_rls.number_of_points_on_curve</identifier_reference>
+			<reference_type>attribute_of</reference_type>
+			<minimum_occurrences>1</minimum_occurrences>
+			<maximum_occurrences>1</maximum_occurrences>
+		</DD_Association>
+		<DD_Association>
+			<identifier_reference>emrsp_rm_rls.focus_position_calculated</identifier_reference>
+			<reference_type>attribute_of</reference_type>
+			<minimum_occurrences>1</minimum_occurrences>
+			<maximum_occurrences>1</maximum_occurrences>
+		</DD_Association>
+		<DD_Association>
+			<identifier_reference>emrsp_rm_rls.laser_channel</identifier_reference>
+			<reference_type>attribute_of</reference_type>
+			<minimum_occurrences>1</minimum_occurrences>
+			<maximum_occurrences>1</maximum_occurrences>
+		</DD_Association>
+		<DD_Association>
+			<identifier_reference>emrsp_rm_rls.end_of_test_trigger</identifier_reference>
+			<reference_type>attribute_of</reference_type>
+			<minimum_occurrences>1</minimum_occurrences>
+			<maximum_occurrences>1</maximum_occurrences>
+		</DD_Association>
+		<DD_Association>
+			<identifier_reference>emrsp_rm_rls.end_of_test_timestamp</identifier_reference>
+			<reference_type>attribute_of</reference_type>
+			<minimum_occurrences>1</minimum_occurrences>
+			<maximum_occurrences>1</maximum_occurrences>
+		</DD_Association>
+		<DD_Association>
+			<identifier_reference>emrsp_rm_rls.snr</identifier_reference>
+			<reference_type>attribute_of</reference_type>
+			<minimum_occurrences>0</minimum_occurrences>
+			<maximum_occurrences>1</maximum_occurrences>
+		</DD_Association>
+		<DD_Association>
+			<identifier_reference>emrsp_rm_rls.enabling_algorithm_mask</identifier_reference>
+			<reference_type>attribute_of</reference_type>
+			<minimum_occurrences>0</minimum_occurrences>
+			<maximum_occurrences>1</maximum_occurrences>
+		</DD_Association>
+		<DD_Association>
+			<identifier_reference>emrsp_rm_rls.criticality</identifier_reference>
+			<reference_type>attribute_of</reference_type>
+			<minimum_occurrences>1</minimum_occurrences>
+			<maximum_occurrences>1</maximum_occurrences>
+		</DD_Association>
+	</DD_Class>
+</Ingest_LDD>
