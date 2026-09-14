@@ -1,0 +1,6 @@
+# Keep PDS tabular products byte-for-byte unchanged
+*.tab -text
+*.csv -text
+
+# Keep XML labels consistently LF-terminated
+*.xml text eol=lf

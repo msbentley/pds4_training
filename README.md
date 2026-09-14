@@ -1,6 +1,10 @@
 # PDS4 training
 
-This repo has a number of files and presentations used for the BepiColombo PDS4 training in Tokyo 11-12th February 2026.
+This repo has a number of files and presentations used for PDS4 training workshops. The main branch will always contain material for the upcoming workshop, whilst the outcomes of previous workshops will be released afterwards and are available here:
+
+- BepiColombo PDS4 training in Tokyo 11-12th February 2026
+  - https://github.com/msbentley/pds4_training/releases/tag/tokyo-2026
+- 
 
 ## Contents
 
